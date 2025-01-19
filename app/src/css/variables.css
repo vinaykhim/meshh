@@ -1,5 +1,7 @@
 :root {
   --primary-color: #070707;
   --secondary-color: #ffc200;
+  --primary-hovered-color: rgba(7, 7, 7, 0.6);
+  --secondary-hovered-color: rgba(255, 194, 0, 0.6);
   --primary-border-color: #e0e0e0;
 }

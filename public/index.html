@@ -33,9 +33,9 @@
     <div class="wrapper background-pimary">
       <main>
         <!-- header start -->
-        <header class="container-fluid header position-fixed top-0 left-0">
+        <header class="container-fluid header position-fixed top-0 left-0 p-0">
           <nav
-            class="inner-nav d-flex justify-content-between align-items-stretch ms-4 me-3"
+            class="position-relative d-flex justify-content-between align-items-stretch ps-3 pe-2 m-0"
           >
             <a>
               <img src="assets/logos/logo.svg" width="95px" height="95px" />
@@ -44,7 +44,7 @@
               class="d-flex h-auto gap-4 justify-content-center align-items-center pe-3"
             >
               <ul
-                class="menu d-none d-md-flex h-auto m-0 gap-4 list-unstyled text-nowrap"
+                class="menu fs-6 d-none d-md-flex h-auto m-0 gap-3 gap-lg-4 list-unstyled text-nowrap"
               >
                 <li class="">
                   <a href="#">Our Offering</a>
@@ -55,7 +55,21 @@
                 <li><a href="#">Blog</a></li>
               </ul>
               <button class="common-btn text-nowrap">Contact US</button>
-              <i class="fa-solid fa-bars d-block d-md-none"></i>
+              <i id="fa-bars" class="fa-solid fa-bars d-md-none"></i>
+              <i id="fa-xmark" class="fa-solid fa-xmark d-md-none"></i>
+              <div id="menu-option" class="menu-option text-center pe-5">
+                <ul
+                  class="h-auto d-flex text-start flex-column m-2 gap-4 list-unstyled text-nowrap"
+                >
+                  <li class="">
+                    <a href="#">Our Offering</a>
+                  </li>
+                  <li><a href="#"> Our Expertise</a></li>
+                  <li><a href="#"> Our Project</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
             </div>
           </nav>
         </header>
@@ -63,7 +77,8 @@
         <!-- hero section start -->
         <section class="container-fluid">
           <div class="hero-section row">
-            <div class="col-6 p-0 position-relative">
+            <div class="hero-one col-12 col-lg-6 p-0 position-relative">
+              <!-- line design start -->
               <div
                 class="line-container w-100 h-100 d-flex justify-content-around align-items-start overflow-hidden"
               >
@@ -74,6 +89,8 @@
                 <div class="line"></div>
                 <div class="line"></div>
               </div>
+              <!-- line design end -->
+              <!-- contect part start -->
               <div class="row position-absolute top-0 left-0 w-100 h-100">
                 <div class="col-3 h-100 position-relative">
                   <img
@@ -81,10 +98,84 @@
                     src="./assets/images/hero/img4.png"
                   />
                 </div>
-                <div class="col-9 ps-3 pe-2"></div>
+                <!-- main content start -->
+                <div
+                  class="col-9 d-flex align-items-end mx-auto overflow-hidden"
+                >
+                  <div class="w-full mb-5">
+                    <div class="row align-items-center">
+                      <div class="col text-center text-lg-start text-white">
+                        <div class="text-start">
+                          <p class="fs-5 textcolor-secondary">
+                            Welcome To Meshh
+                          </p>
+                          <h1 class="h2 h1-lg">
+                            Designing Spaces That Inspire And
+                            <span class="textcolor-secondary">Empower.</span>
+                          </h1>
+                          <p class="fs-6 text-start mt-3">
+                            Aliquam Pellentesque Quam Aenean Bibendum Mollis
+                            Per. Duis Non Rhoncus Vulputate Maximus Enim Ornare.
+                            Diam Eu Id Rutrum Lobortis Netus Neque Integer
+                            Venenatis Luctus Libero A.
+                          </p>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                          <div class="d-flex align-items-start py-4">
+                            <button class="common-btn text-nowrap">
+                              Discover More
+                            </button>
+                          </div>
+                          <div class="arrow d-none d-md-block">
+                            <img
+                              src="assets/images/hero/line-design.png"
+                              width="180px"
+                              height="180px"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="user-reviews d-flex gap-3 text-white align-items-center flex-nowrap"
+                        >
+                          <div class="d-flex position-relative">
+                            <img
+                              class="user-image"
+                              src="./assets/images/hero/human1.png"
+                              alt="User"
+                            />
+                            <img
+                              class="user-image"
+                              src="./assets/images/hero/human2.png"
+                              alt="User"
+                            />
+                            <img
+                              class="user-image"
+                              src="./assets/images/hero/human3.png"
+                              alt="User"
+                            />
+                            <img
+                              class="user-image"
+                              src="./assets/images/hero/human4.png"
+                              alt="User"
+                            />
+                          </div>
+                          <div
+                            class="d-flex align-items-center gap-2 flex-wrap"
+                          >
+                            <h4 class="mb-0">38,182</h4>
+                            <small>User Review</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- main content end -->
               </div>
+              <!--  contect part end -->
             </div>
-            <div class="col-6 p-0">
+            <!-- slider part start -->
+            <div class="col-12 col-lg-6 p-0">
               <div class="position-relative w-100 overflow-hidden">
                 <div class="carousel-container d-flex">
                   <div
@@ -104,7 +195,9 @@
                           typesetting industry. Lorem Ipsum has been the
                           industry's standard
                         </p>
-                        <button class="common-btn mb-2">Learne More</button>
+                        <button class="common-btn mb-2 text-nowrap">
+                          Learn More
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -125,7 +218,9 @@
                           typesetting industry. Lorem Ipsum has been the
                           industry's standard
                         </p>
-                        <button class="common-btn mb-2">Learne More</button>
+                        <button class="common-btn mb-2 text-nowrap">
+                          Learn More
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -146,37 +241,144 @@
                           typesetting industry. Lorem Ipsum has been the
                           industry's standard
                         </p>
-                        <button class="common-btn mb-2">Learne More</button>
+                        <button class="common-btn mb-2 text-nowrap">
+                          Learn More
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- slider part start -->
+          </div>
+        </section>
+
+        <!-- crafting section start -->
+        <section>
+          <div class="w-100 m-0 p-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6"></div>
+                <div class="col-12 col-lg-6"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- crafting section end -->
+        <section class="bg-black py-4">
+          <div class="marquee-wrapper overflow-hidden">
+            <div class="marquee-content d-flex align-items-center text-warning">
+              <div class="marquee-item d-flex align-items-center gap-2">
+                <img
+                  src="./assets/images/marquie/star.png"
+                  alt="Star"
+                  class="star-img"
+                />
+                <span class="fs-3">Marriage Event</span>
+              </div>
+              <div class="marquee-item d-flex align-items-center gap-2">
+                <img
+                  src="./assets/images/marquie/star.png"
+                  alt="Star"
+                  class="star-img"
+                />
+                <span class="fs-3">Corporate Event</span>
+              </div>
+              <div class="marquee-item d-flex align-items-center gap-2">
+                <img
+                  src="./assets/images/marquie/star.png"
+                  alt="Star"
+                  class="star-img"
+                />
+                <span class="fs-3">Marriage Event</span>
+              </div>
+              <div class="marquee-item d-flex align-items-center gap-2">
+                <img
+                  src="./assets/images/marquie/star.png"
+                  alt="Star"
+                  class="star-img"
+                />
+                <span class="fs-3">Corporate Event</span>
+              </div>
+            </div>
           </div>
         </section>
       </main>
     </div>
+    <script src="../app/src/js/header.js"></script>
     <script src="../app/src/js/carousel.js"></script>
     <script src="../app/src/js/hero.js"></script>
   </body>
 </html>
 
-<!-- <div id="header ">
-        <object
-          class="w-100 h-auto"
-          type="text/html"
-          data="../app/src/html/reusable/header.html"
-        ></object>
-      </div>
+<!-- <section>
 
-      <section class="d-flex container background-pimary">
-        <button class="common-btn d-flex">click me</button>
-      </section> -->
-
-<!-- <div id="footer">
-        <object
-          type="text/html"
-          data="../app/src/html/reusable/footer.html"
-        ></object>
-      </div> -->
+     <marquee
+            class="container-fluid d-flex py-2 py-md-3 py-lg-4 border align-items-center textcolor-secondary"
+            direction="left"
+          >
+            <div class="d-flex">
+              <div class="marquee-item flex items-center gap-2 text-yellow-500">
+                <img
+                  src="./assets/images/marquie/star.png"
+                  alt="Star"
+                  class="star-img"
+                />
+                <span
+                  class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+                  >Marriage Event</span
+                >
+              </div>
+              <div class="marquee-item flex items-center gap-2 text-yellow-500">
+                <img
+                  src="./assets/images/marquie/star.png"
+                  alt="Star"
+                  class="star-img"
+                />
+                <span
+                  class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+                  >Corporate Event</span
+                >
+              </div>
+              <div class="marquee-item flex items-center gap-2 text-yellow-500">
+                <img
+                  src="./assets/images/marquie/star.png"
+                  alt="Star"
+                  class="star-img"
+                />
+                <span
+                  class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+                  >Marriage Event</span
+                >
+              </div>
+              <div class="marquee-item flex items-center gap-2 text-yellow-500">
+                <img
+                  src="./assets/images/marquie/star.png"
+                  alt="Star"
+                  class="star-img"
+                />
+                <span
+                  class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
+                  >Corporate Event</span
+                >
+              </div>
+              <div class="marquee-item">
+                <img class="star-img" src="./assets/images/marquie/star.png" />
+                <h3 class="marquee-text">Marriage Event</h3>
+              </div>
+              <div class="marquee-item">
+                <img class="star-img" src="./assets/images/marquie/star.png" />
+                <h3 class="marquee-text">Corporate Event</h3>
+              </div>
+              <div class="marquee-item">
+                <img class="star-img" src="./assets/images/marquie/star.png" />
+                <h3 class="marquee-text">Marriage Event</h3>
+              </div>
+              <div class="marquee-item">
+                <img class="star-img" src="./assets/images/marquie/star.png" />
+                <h3 class="marquee-text">Corporate Event</h3>
+              </div>
+            </div>
+          </marquee>
+        </section> -->

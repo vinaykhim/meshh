@@ -1,4 +1,5 @@
 @import url("./variables.css");
+@import url("./font.css");
 @import url("./components/comman-button.css");
 @import url("./components/carousel.css");
 
@@ -6,6 +7,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 /* wrapper start */
@@ -38,23 +43,50 @@
   background-color: rgba(7, 7, 7, 0.6);
   z-index: 1000;
 }
-.menu li a {
+menu li a {
+  padding: 45px 0;
+}
+.menu li a,
+.menu-option ul li a {
   text-decoration: none;
   color: white;
-  padding: 45px 0;
   transition: color 0.5s ease;
 }
-.menu li a:hover {
-  color: gray;
+.menu li a:hover,
+.menu-option ul li a:hover {
+  color: var(--secondary-hovered-color);
 }
 .fa-bars {
   font-size: 25px;
   color: white;
+  cursor: pointer;
+}
+.fa-xmark {
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+.menu-option {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0;
+  height: auto;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: var(--primary-hovered-color);
+  color: white;
+  transition: right 0.7s ease-in-out;
 }
 /* header end */
 
 /* hero section start*/
 .hero-section {
+  height: auto;
+}
+.hero-one {
   height: 100vh;
 }
 
@@ -81,4 +113,73 @@
     rgba(255, 194, 0, 0.1)
   );
 }
+
+.arrow {
+  transform: rotate(-1deg);
+}
+
+.user-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
 /* hero section end*/
+
+/* marquee section start */
+/* Marquee Container */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #000;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+/* carfting section start */
+/* carfting section end */
+
+/* Marquee Content */
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-content {
+  display: flex;
+  animation: scroll 35s linear infinite;
+}
+.marquee-item {
+  margin-right: 40px;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 640px) {
+  .star-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .star-img {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (max-width: 1024px) {
+  .star-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* marquee section end */
