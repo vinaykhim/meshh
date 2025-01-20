@@ -36,6 +36,9 @@ body {
 .textcolor-secondary {
   color: var(--secondary-color);
 }
+.text-justify{
+  text-align: justify;
+}
 /* comman background and text class end */
 
 /* header start */
@@ -87,7 +90,7 @@ menu li a {
   height: auto;
 }
 .hero-one {
-  height: 100vh;
+  height: 90vh;
 }
 
 .line-container {
@@ -125,9 +128,96 @@ menu li a {
 }
 /* hero section end*/
 
+
+/*=========Start Marquee Animation================*/
+.marquee_animation {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: var(--primary-color);
+  padding: 20px 0;
+  direction: ltr;
+}
+
+.marquee_animation .text-slide {
+  --gap: 0.1px;
+  display: flex;
+  gap: 0.1px;
+}
+
+.scroll {
+  animation: scroll 70s linear infinite;
+}
+
+.sliders {
+  flex-shrink: 0;
+}
+
+.text-slide ul {
+  padding: 0;
+  margin: 0;
+}
+
+.text-slide ul li {
+  display: inline-block;
+}
+
+.text-slide ul li div {
+  color: #fff;
+
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.text-slide ul li span {
+  margin: 0 40px;
+  color: var(--text-white);
+  opacity: 0.5;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+/*End Marquee Animation*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* marquee section start */
 /* Marquee Container */
-.marquee {
+/* .marquee {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
@@ -137,13 +227,13 @@ menu li a {
   display: flex;
   align-items: center;
   height: 60px;
-}
+} */
 
 /* carfting section start */
 /* carfting section end */
 
 /* Marquee Content */
-.marquee-wrapper {
+/* .marquee-wrapper {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -181,5 +271,5 @@ menu li a {
     width: 50px;
     height: 50px;
   }
-}
+} */
 /* marquee section end */
