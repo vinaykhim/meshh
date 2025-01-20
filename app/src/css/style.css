@@ -1,0 +1,237 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../../public/assets/fonts/Poppins-Regular.ttf")
+      format("truetype"),
+    url("../../../public/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /*Fonts*/
+  --primary-archivo: "Poppins", sans-serif;
+  --secondary-titillium: "Titillium Web", sans-serif;
+  /*color*/
+  --sub-headding: #0087ff;
+  --headiing: #333333;
+  --pregraph: #4f4f4f;
+  /*Other Color*/
+  --whight-color: #fff;
+
+  --primary-color: #070707;
+  --secondary-color: #ffc200;
+  --primary-hovered-color: rgba(7, 7, 7, 0.6);
+  --secondary-hovered-color: rgba(255, 194, 0, 0.6);
+  --primary-border-color: #e0e0e0;
+}
+
+/* wrapper start */
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* wrapper end */
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-archivo) !important;
+}
+
+a {
+  text-decoration: none !important;
+  list-style: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0px !important;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/*------------------Start Home Page CSS------------------------*/
+
+/* Hero Section start*/
+.hero-section {
+  height: auto;
+}
+.hero-one {
+  height: auto;
+}
+
+.line-container {
+  padding: 0 8%;
+}
+
+.line {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  top: var(--random-top, 10%);
+  width: inherit;
+  height: 8%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 194, 0, 0.1),
+    rgba(255, 194, 0, 1),
+    rgba(255, 194, 0, 0.1)
+  );
+}
+
+.arrow {
+  transform: rotate(-1deg);
+}
+
+.user-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+/* carousel start */
+.slick-slide {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.card {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 7, 7, 0.3),
+    rgba(7, 7, 7, 0.5),
+    rgba(7, 7, 7, 0.9)
+  );
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.card-content {
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  transition: bottom 0.8s ease-in-out;
+}
+.card:hover .card-content {
+  bottom: 0;
+}
+.arrow {
+  transform: rotate(-45deg);
+}
+
+/* carousel end */
+/* Hero Section end*/
+
+/*Welcome to meshh*/
+
+/*marquee start*/
+.marquee_animation {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: var(--primary-color);
+  padding: 20px 0;
+  direction: ltr;
+}
+
+.marquee_animation .text-slide {
+  --gap: 0.1px;
+  display: flex;
+  gap: 0.1px;
+}
+
+.scroll {
+  animation: scroll 70s linear infinite;
+}
+
+.sliders {
+  flex-shrink: 0;
+}
+
+.text-slide ul {
+  padding: 0;
+  margin: 0;
+}
+
+.text-slide ul li {
+  display: inline-block;
+}
+
+.text-slide ul li div {
+  color: #fff;
+
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.text-slide ul li span {
+  margin: 0 40px;
+  color: var(--text-white);
+  opacity: 0.5;
+}
+/*marquee end*/
+
+/*------------------End Home Page CSS------------------------*/
+
+/*------------------Start About Page CSS------------------------*/
+/*Hero Section*/
+
+/*Welcome to meshh*/
+
+/*marquee*/
+
+/*------------------End About Page CSS------------------------*/

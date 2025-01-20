@@ -11,25 +11,17 @@
     />
 
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-    <link rel="stylesheet" href="../app/src/css/global.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.slim.js"
-      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="../app/src/css/style.css" />
+    <link rel="stylesheet" href="../app/src/css/plugin.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -82,7 +74,9 @@
         <!-- hero section start -->
         <section class="container-fluid">
           <div class="hero-section row">
-            <div class="hero-one order-2 order-lg-1 col-12 col-lg-6 p-0 position-relative">
+            <div
+              class="hero-one order-2 order-lg-1 col-12 col-lg-6 p-0 position-relative"
+            >
               <!-- line design start -->
               <div
                 class="line-container w-100 h-100 d-none d-lg-flex justify-content-around align-items-start overflow-hidden"
@@ -98,7 +92,7 @@
 
               <!-- contect part start -->
               <div class="row position-absolute top-0 left-0 w-100 h-100">
-                <div class="d-none d-md-block col-md-3 h-100 position-relative">
+                <div class="d-none d-lg-block col-md-3 h-100 position-relative">
                   <img
                     class="position-absolute top-50 ms-4 w-50 h-auto"
                     src="./assets/images/hero/img4.png"
@@ -108,9 +102,11 @@
                 <div
                   class="col-12 col-md-9 d-flex align-items-center mx-auto overflow-hidden"
                 >
-                  <div class="w-full mt-5">
-                    <div class="row align-items-center justify-content-center mb-5 ">
-                      <div class="col text-center text-lg-start text-white ms-5 ms-md-0">
+                  <div class="w-full">
+                    <div class="row align-items-center justify-content-center">
+                      <div
+                        class="col text-center text-lg-start text-white ms-5 ms-md-0"
+                      >
                         <div class="text-start">
                           <p class="fs-5 textcolor-secondary">
                             Welcome To Meshh
@@ -119,7 +115,7 @@
                             Designing Spaces That Inspire And
                             <span class="textcolor-secondary">Empower.</span>
                           </h1>
-                          <p class="fs-6 text-justify mt-3 ">
+                          <p class="fs-6 text-justify mt-3">
                             Aliquam Pellentesque Quam Aenean Bibendum Mollis
                             Per. Duis Non Rhoncus Vulputate Maximus Enim Ornare.
                             Diam Eu Id Rutrum Lobortis Netus Neque Integer
@@ -132,7 +128,7 @@
                               Discover More
                             </button>
                           </div>
-                          <div class="arrow d-none d-md-block">
+                          <div class="arrow d-none d-lg-block">
                             <img
                               src="assets/images/hero/line-design.png"
                               width="180px"
@@ -141,7 +137,7 @@
                           </div>
                         </div>
                         <div
-                          class="user-reviews d-flex gap-3 text-white align-items-center flex-nowrap"
+                          class="user-reviews mt-2 d-flex gap-3 text-white align-items-center flex-nowrap"
                         >
                           <div class="d-flex position-relative">
                             <img
@@ -166,7 +162,7 @@
                             />
                           </div>
                           <div
-                            class="d-flex align-items-center gap-2 flex-wrap"
+                            class="d-flex align-items-center gap-3 flex-wrap"
                           >
                             <h4 class="mb-0">38,182</h4>
                             <small>User Review</small>
@@ -182,72 +178,92 @@
             </div>
 
             <!-- slider part start -->
-            <div class="col-12 order-1  order-lg-2 col-lg-6 p-0">
+            <div class="col-12 order-1 order-lg-2 col-lg-6 p-0">
               <div class="position-relative w-100 overflow-hidden">
                 <div class="slick-carousel">
-                  <div
-                    class="card"
-                    style="background-image: url('assets/images/hero/img1.png')"
-                  >
+                  <div class="card">
+                    <img
+                      src="assets/images/hero/img1.png"
+                      alt="Marriage Event"
+                      class="card-img"
+                    />
                     <div class="card-content">
                       <div class="d-flex flex-column gap-2">
                         <div
                           class="d-flex fs-5 justify-content-between textcolor-secondary flex-nowrap align-items-center"
                         >
                           <h3>Marriage Event</h3>
-                          <i class="fa-solid fa-arrow-right-long fs-4"></i>
+                          <i
+                            class="arrow fa-solid fa-arrow-right-long fs-4"
+                          ></i>
                         </div>
                         <p class="fs-6 mb-3">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry. Lorem Ipsum has been the industry's standard
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard
                         </p>
-                        <button class="common-btn mb-2 text-nowrap">Learn More</button>
+                        <button class="common-btn mb-2 text-nowrap">
+                          Learn More
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="card"
-                    style="background-image: url('assets/images/hero/img2.png')"
-                  >
+                  <div class="card">
+                    <img
+                      src="assets/images/hero/img2.png"
+                      alt="Marriage Event"
+                      class="card-img"
+                    />
                     <div class="card-content">
                       <div class="d-flex flex-column gap-2">
                         <div
                           class="d-flex fs-5 justify-content-between textcolor-secondary flex-nowrap align-items-center"
                         >
                           <h3>Marriage Event</h3>
-                          <i class="fa-solid fa-arrow-right-long fs-4"></i>
+                          <i
+                            class="arrow fa-solid fa-arrow-right-long fs-4"
+                          ></i>
                         </div>
                         <p class="fs-6 mb-3">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry. Lorem Ipsum has been the industry's standard
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard
                         </p>
-                        <button class="common-btn mb-2 text-nowrap">Learn More</button>
+                        <button class="common-btn mb-2 text-nowrap">
+                          Learn More
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div
-                    class="card"
-                    style="background-image: url('assets/images/hero/img3.png')"
-                  >
+                  <div class="card">
+                    <img
+                      src="assets/images/hero/img3.png"
+                      alt="Marriage Event"
+                      class="card-img"
+                    />
                     <div class="card-content">
                       <div class="d-flex flex-column gap-2">
                         <div
                           class="d-flex fs-5 justify-content-between textcolor-secondary flex-nowrap align-items-center"
                         >
                           <h3>Marriage Event</h3>
-                          <i class="fa-solid fa-arrow-right-long fs-4"></i>
+                          <i
+                            class="arrow fa-solid fa-arrow-right-long fs-4"
+                          ></i>
                         </div>
                         <p class="fs-6 mb-3">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry. Lorem Ipsum has been the industry's standard
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry. Lorem Ipsum has been the
+                          industry's standard
                         </p>
-                        <button class="common-btn mb-2 text-nowrap">Learn More</button>
+                        <button class="common-btn mb-2 text-nowrap">
+                          Learn More
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              
             </div>
             <!-- slider part start -->
           </div>
@@ -255,12 +271,12 @@
 
         <!-- crafting section start -->
         <section>
-          <div class="w-100 m-0 p-0 bg-white py-5">
-            <div class="container">
+          <div class="w-100 m-0 p-0 bg-white border py-one">
+            <div class="container py-120">
               <div class="row">
                 <div class="col-12 col-lg-6 position-relative"></div>
                 <div class="col-12 col-lg-6">
-                  <h4>Welcome To Meshh</h4>
+                  <h4 class="textcolor-secondary">Welcome To Meshh</h4>
                   <h2 class="text-justify my-3">
                     Crafting Beautiful Homes with Passion and Expertise
                   </h2>
@@ -277,11 +293,13 @@
                   </p>
                   <div class="my-4 d-flex justify-content-start gap-3">
                     <button class="common-btn">
-                      <img src="./assets/images/crafting/smil.png" />
+                      <img src="./assets/icons/Group.png" />
                       <span>Free Consultations</span>
                     </button>
-                    <button class="common-btn2">Learne More</button>
-                    </div>
+                    <button class="common-btn2">
+                      <span class="">Learne More</span>
+                      <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -291,9 +309,9 @@
         <!-- crafting section end -->
 
         <!-- Marquee start -->
-        <section class='marquee_animation' id='marquee'>
-          <div class='text-slide'>
-            <div class='sliders scroll'>
+        <section class="marquee_animation" id="marquee">
+          <div class="text-slide">
+            <div class="sliders scroll">
               <ul>
                 <li>
                   <div class="marquee-item d-flex align-items-center gap-2">
@@ -337,7 +355,7 @@
                 </li>
               </ul>
             </div>
-            <div class='sliders scroll'>
+            <div class="sliders scroll">
               <ul>
                 <li>
                   <div class="marquee-item d-flex align-items-center gap-2">
@@ -362,7 +380,7 @@
                 <li>
                   <div class="marquee-item d-flex align-items-center gap-2">
                     <img
-                        src="./assets/images/marquie/star.png"
+                      src="./assets/images/marquie/star.png"
                       alt="Star"
                       class="star-img"
                     />
@@ -384,7 +402,171 @@
           </div>
         </section>
         <!-- Marquee end -->
-       
+
+        <!-- what we do start -->
+        <section>
+          <div class="container-fluid bg-white py-120">
+            <div
+              class="d-flex flex-column gap-2 justify-content-center align-items-center w-75 mx-auto mb-4"
+            >
+              <h4 class="textcolor-secondary">What We Do</h4>
+              <h2>The Best Services We Provide</h2>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas aliquid modi nemo dolores rem quis provident neque
+                tenetur, repudiandae amet consectetur earum laborum rerum illum
+                excepturi minima deleniti est? Ex!
+              </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+              <div
+                class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
+              >
+                <div class="what-card">
+                  <div class="position-relative">
+                    <img
+                      src="assets/images/what we do/img1.jpeg"
+                      alt="Marriage Event"
+                      class="card-img-top w-100 h-100"
+                    />
+                    <h5 class="what-card-title">Marriage Event</h5>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="text-justify my-3">
+                      <p class="fs-6">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard.
+                      </p>
+                      <button href="#" class="common-btn">Discover More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
+              >
+                <div class="what-card rounded-0">
+                  <div class="position-relative">
+                    <img
+                      src="assets/images/what we do/img1.jpeg"
+                      alt="Marriage Event"
+                      class="card-img-top w-100 h-100"
+                    />
+                    <h5 class="what-card-title">Marriage Event</h5>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="text-justify my-3">
+                      <p class="fs-6">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard.
+                      </p>
+                      <button href="#" class="common-btn">Discover More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
+              >
+                <div class="what-card rounded-0">
+                  <div class="position-relative">
+                    <img
+                      src="assets/images/what we do/img1.jpeg"
+                      alt="Marriage Event"
+                      class="card-img-top w-100 h-100"
+                    />
+                    <h5 class="what-card-title">Marriage Event</h5>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="text-justify my-3">
+                      <p class="fs-6">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard.
+                      </p>
+                      <button href="#" class="common-btn">Discover More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
+              >
+                <div class="what-card">
+                  <div class="position-relative">
+                    <img
+                      src="assets/images/what we do/img1.jpeg"
+                      alt="Marriage Event"
+                      class="card-img-top w-100 h-100"
+                    />
+                    <h5 class="what-card-title">Marriage Event</h5>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="text-justify my-3">
+                      <p class="fs-6">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard.
+                      </p>
+                      <button href="#" class="common-btn">Discover More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
+              >
+                <div class="what-card rounded-0">
+                  <div class="position-relative">
+                    <img
+                      src="assets/images/what we do/img1.jpeg"
+                      alt="Marriage Event"
+                      class="card-img-top w-100 h-100"
+                    />
+                    <h5 class="what-card-title">Marriage Event</h5>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="text-justify my-3">
+                      <p class="fs-6">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard.
+                      </p>
+                      <button href="#" class="common-btn">Discover More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
+              >
+                <div class="what-card rounded-0">
+                  <div class="position-relative">
+                    <img
+                      src="assets/images/what we do/img1.jpeg"
+                      alt="Marriage Event"
+                      class="card-img-top w-100 h-100"
+                    />
+                    <h5 class="what-card-title">Marriage Event</h5>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="text-justify my-3">
+                      <p class="card-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard.
+                      </p>
+                      <button href="#" class="common-btn">Discover More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- what we do end -->
       </main>
     </div>
     <script src="../app/src/js/header.js"></script>
@@ -392,22 +574,3 @@
     <script src="../app/src/js/hero.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

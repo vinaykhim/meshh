@@ -1,0 +1,14 @@
+@media (max-width: 668px) {
+  .hero-one {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-one {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1320px) {
+}

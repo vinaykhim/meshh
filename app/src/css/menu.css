@@ -1,0 +1,43 @@
+/* header start */
+.header {
+  background-color: rgba(7, 7, 7, 0.6);
+  z-index: 1000;
+}
+menu li a {
+  padding: 45px 0;
+}
+.menu li a,
+.menu-option ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s ease;
+}
+.menu li a:hover,
+.menu-option ul li a:hover {
+  color: var(--secondary-hovered-color);
+}
+.fa-bars {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+.fa-xmark {
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+.menu-option {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0;
+  height: auto;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: var(--primary-hovered-color);
+  color: white;
+  transition: right 0.7s ease-in-out;
+}
+/* header end */
