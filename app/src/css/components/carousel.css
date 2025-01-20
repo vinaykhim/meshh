@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -24,7 +24,7 @@
 
 .card-content {
   position: absolute;
-  bottom: -10%;
+  bottom: -11%;
   left: 0;
   width: 100%;
   padding: 20px;
