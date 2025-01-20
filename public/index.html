@@ -16,6 +16,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="../app/src/css/global.css" />
     <script
       src="https://code.jquery.com/jquery-3.7.1.slim.js"
@@ -28,6 +30,9 @@
       integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body>
     <div class="wrapper background-pimary">
@@ -90,6 +95,7 @@
                 <div class="line"></div>
               </div>
               <!-- line design end -->
+
               <!-- contect part start -->
               <div class="row position-absolute top-0 left-0 w-100 h-100">
                 <div class="col-3 h-100 position-relative">
@@ -100,10 +106,10 @@
                 </div>
                 <!-- main content start -->
                 <div
-                  class="col-9 d-flex align-items-end mx-auto overflow-hidden"
+                  class="col-9 d-flex align-items-center mx-auto overflow-hidden"
                 >
-                  <div class="w-full mb-5">
-                    <div class="row align-items-center">
+                  <div class="w-full mt-5">
+                    <div class="row align-items-center mb-5">
                       <div class="col text-center text-lg-start text-white">
                         <div class="text-start">
                           <p class="fs-5 textcolor-secondary">
@@ -113,7 +119,7 @@
                             Designing Spaces That Inspire And
                             <span class="textcolor-secondary">Empower.</span>
                           </h1>
-                          <p class="fs-6 text-start mt-3">
+                          <p class="fs-6 text-justify mt-3 ">
                             Aliquam Pellentesque Quam Aenean Bibendum Mollis
                             Per. Duis Non Rhoncus Vulputate Maximus Enim Ornare.
                             Diam Eu Id Rutrum Lobortis Netus Neque Integer
@@ -174,10 +180,11 @@
               </div>
               <!--  contect part end -->
             </div>
+
             <!-- slider part start -->
             <div class="col-12 col-lg-6 p-0">
               <div class="position-relative w-100 overflow-hidden">
-                <div class="carousel-container d-flex">
+                <div class="slick-carousel">
                   <div
                     class="card"
                     style="background-image: url('assets/images/hero/img1.png')"
@@ -187,17 +194,14 @@
                         <div
                           class="d-flex fs-5 justify-content-between textcolor-secondary flex-nowrap align-items-center"
                         >
-                          <h3>Marrige Event</h3>
+                          <h3>Marriage Event</h3>
                           <i class="fa-solid fa-arrow-right-long fs-4"></i>
                         </div>
                         <p class="fs-6 mb-3">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard
+                          Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry. Lorem Ipsum has been the industry's standard
                         </p>
-                        <button class="common-btn mb-2 text-nowrap">
-                          Learn More
-                        </button>
+                        <button class="common-btn mb-2 text-nowrap">Learn More</button>
                       </div>
                     </div>
                   </div>
@@ -210,17 +214,14 @@
                         <div
                           class="d-flex fs-5 justify-content-between textcolor-secondary flex-nowrap align-items-center"
                         >
-                          <h3>Marrige Event</h3>
+                          <h3>Marriage Event</h3>
                           <i class="fa-solid fa-arrow-right-long fs-4"></i>
                         </div>
                         <p class="fs-6 mb-3">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard
+                          Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry. Lorem Ipsum has been the industry's standard
                         </p>
-                        <button class="common-btn mb-2 text-nowrap">
-                          Learn More
-                        </button>
+                        <button class="common-btn mb-2 text-nowrap">Learn More</button>
                       </div>
                     </div>
                   </div>
@@ -233,22 +234,20 @@
                         <div
                           class="d-flex fs-5 justify-content-between textcolor-secondary flex-nowrap align-items-center"
                         >
-                          <h3>Marrige Event</h3>
+                          <h3>Marriage Event</h3>
                           <i class="fa-solid fa-arrow-right-long fs-4"></i>
                         </div>
                         <p class="fs-6 mb-3">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard
+                          Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry. Lorem Ipsum has been the industry's standard
                         </p>
-                        <button class="common-btn mb-2 text-nowrap">
-                          Learn More
-                        </button>
+                        <button class="common-btn mb-2 text-nowrap">Learn More</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              
             </div>
             <!-- slider part start -->
           </div>
@@ -256,54 +255,136 @@
 
         <!-- crafting section start -->
         <section>
-          <div class="w-100 m-0 p-0">
+          <div class="w-100 m-0 p-0 bg-white py-5">
             <div class="container">
               <div class="row">
-                <div class="col-12 col-lg-6"></div>
-                <div class="col-12 col-lg-6"></div>
+                <div class="col-12 col-lg-6 position-relative"></div>
+                <div class="col-12 col-lg-6">
+                  <h4>Welcome To Meshh</h4>
+                  <h2 class="text-justify my-3">
+                    Crafting Beautiful Homes with Passion and Expertise
+                  </h2>
+                  <p class="text-justify">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently.
+                  </p>
+                  <div class="my-4 d-flex justify-content-start gap-3">
+                    <button class="common-btn">
+                      <img src="./assets/images/crafting/smil.png" />
+                      <span>Free Consultations</span>
+                    </button>
+                    <button class="common-btn2">Learne More</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
         <!-- crafting section end -->
-        <section class="bg-black py-4">
-          <div class="marquee-wrapper overflow-hidden">
-            <div class="marquee-content d-flex align-items-center text-warning">
-              <div class="marquee-item d-flex align-items-center gap-2">
-                <img
-                  src="./assets/images/marquie/star.png"
-                  alt="Star"
-                  class="star-img"
-                />
-                <span class="fs-3">Marriage Event</span>
-              </div>
-              <div class="marquee-item d-flex align-items-center gap-2">
-                <img
-                  src="./assets/images/marquie/star.png"
-                  alt="Star"
-                  class="star-img"
-                />
-                <span class="fs-3">Corporate Event</span>
-              </div>
-              <div class="marquee-item d-flex align-items-center gap-2">
-                <img
-                  src="./assets/images/marquie/star.png"
-                  alt="Star"
-                  class="star-img"
-                />
-                <span class="fs-3">Marriage Event</span>
-              </div>
-              <div class="marquee-item d-flex align-items-center gap-2">
-                <img
-                  src="./assets/images/marquie/star.png"
-                  alt="Star"
-                  class="star-img"
-                />
-                <span class="fs-3">Corporate Event</span>
-              </div>
+
+        <!-- Marquee start -->
+        <section class='marquee_animation' id='marquee'>
+          <div class='text-slide'>
+            <div class='sliders scroll'>
+              <ul>
+                <li>
+                  <div class="marquee-item d-flex align-items-center gap-2">
+                    <img
+                      src="./assets/images/marquie/star.png"
+                      alt="Star"
+                      class="star-img"
+                    />
+                    <span class="fs-3">Marriage Event</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="marquee-item d-flex align-items-center gap-2">
+                    <img
+                      src="./assets/images/marquie/star.png"
+                      alt="Star"
+                      class="star-img"
+                    />
+                    <span class="fs-3">Corporate Event</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="marquee-item d-flex align-items-center gap-2">
+                    <img
+                      src="./assets/images/marquie/star.png"
+                      alt="Star"
+                      class="star-img"
+                    />
+                    <span class="fs-3">Marriage Event</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="marquee-item d-flex align-items-center gap-2">
+                    <img
+                      src="./assets/images/marquie/star.png"
+                      alt="Star"
+                      class="star-img"
+                    />
+                    <span class="fs-3">Corporate Event</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class='sliders scroll'>
+              <ul>
+                <li>
+                  <div class="marquee-item d-flex align-items-center gap-2">
+                    <img
+                      src="./assets/images/marquie/star.png"
+                      alt="Star"
+                      class="star-img"
+                    />
+                    <span class="fs-3">Marriage Event</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="marquee-item d-flex align-items-center gap-2">
+                    <img
+                      src="./assets/images/marquie/star.png"
+                      alt="Star"
+                      class="star-img"
+                    />
+                    <span class="fs-3">Corporate Event</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="marquee-item d-flex align-items-center gap-2">
+                    <img
+                        src="./assets/images/marquie/star.png"
+                      alt="Star"
+                      class="star-img"
+                    />
+                    <span class="fs-3">Marriage Event</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="marquee-item d-flex align-items-center gap-2">
+                    <img
+                      src="./assets/images/marquie/star.png"
+                      alt="Star"
+                      class="star-img"
+                    />
+                    <span class="fs-3">Corporate Event</span>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
+        <!-- Marquee end -->
+       
       </main>
     </div>
     <script src="../app/src/js/header.js"></script>
@@ -312,73 +393,21 @@
   </body>
 </html>
 
-<!-- <section>
 
-     <marquee
-            class="container-fluid d-flex py-2 py-md-3 py-lg-4 border align-items-center textcolor-secondary"
-            direction="left"
-          >
-            <div class="d-flex">
-              <div class="marquee-item flex items-center gap-2 text-yellow-500">
-                <img
-                  src="./assets/images/marquie/star.png"
-                  alt="Star"
-                  class="star-img"
-                />
-                <span
-                  class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-                  >Marriage Event</span
-                >
-              </div>
-              <div class="marquee-item flex items-center gap-2 text-yellow-500">
-                <img
-                  src="./assets/images/marquie/star.png"
-                  alt="Star"
-                  class="star-img"
-                />
-                <span
-                  class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-                  >Corporate Event</span
-                >
-              </div>
-              <div class="marquee-item flex items-center gap-2 text-yellow-500">
-                <img
-                  src="./assets/images/marquie/star.png"
-                  alt="Star"
-                  class="star-img"
-                />
-                <span
-                  class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-                  >Marriage Event</span
-                >
-              </div>
-              <div class="marquee-item flex items-center gap-2 text-yellow-500">
-                <img
-                  src="./assets/images/marquie/star.png"
-                  alt="Star"
-                  class="star-img"
-                />
-                <span
-                  class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl"
-                  >Corporate Event</span
-                >
-              </div>
-              <div class="marquee-item">
-                <img class="star-img" src="./assets/images/marquie/star.png" />
-                <h3 class="marquee-text">Marriage Event</h3>
-              </div>
-              <div class="marquee-item">
-                <img class="star-img" src="./assets/images/marquie/star.png" />
-                <h3 class="marquee-text">Corporate Event</h3>
-              </div>
-              <div class="marquee-item">
-                <img class="star-img" src="./assets/images/marquie/star.png" />
-                <h3 class="marquee-text">Marriage Event</h3>
-              </div>
-              <div class="marquee-item">
-                <img class="star-img" src="./assets/images/marquie/star.png" />
-                <h3 class="marquee-text">Corporate Event</h3>
-              </div>
-            </div>
-          </marquee>
-        </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
