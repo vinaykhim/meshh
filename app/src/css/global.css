@@ -90,7 +90,7 @@ menu li a {
   height: auto;
 }
 .hero-one {
-  height: 90vh;
+  height: auto;
 }
 
 .line-container {
@@ -187,6 +187,18 @@ menu li a {
 }
 
 /*End Marquee Animation*/
+@media (max-width: 668px){
+  .hero-one {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 992px){
+  .hero-one {
+    height: 60vh;
+  }
+}
+
 
 
 
