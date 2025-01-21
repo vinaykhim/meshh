@@ -567,10 +567,104 @@
           </div>
         </section>
         <!-- what we do end -->
+
+        <!-- center carousel start -->
+
+        <section>
+          <div class="w-100 bg-white py-120">
+            <div class="before-after-slider container">
+              <div class="before-image">
+                <img
+                  src="./assets/images/center carousel/img1.png"
+                  alt="Before"
+                />
+              </div>
+              <div class="after-image">
+                <img
+                  src="./assets/images/center carousel/img2.png"
+                  alt="After"
+                />
+              </div>
+              <div class="slider-line">
+                <div
+                  class="slider-button d-flex justify-content-between align-items-center fs-2 px-1 border-0"
+                >
+                  <span> &lt;</span>
+                  <span> &gt;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- center carousel end -->
       </main>
     </div>
     <script src="../app/src/js/header.js"></script>
     <script src="../app/src/js/carousel.js"></script>
     <script src="../app/src/js/hero.js"></script>
+
+    <script>
+      function initializeBeforeAfterSlider(sliderSelector) {
+        const slider = document.querySelector(sliderSelector);
+        const beforeImage = slider.querySelector(".before-image");
+        const sliderLine = slider.querySelector(".slider-line");
+        const sliderButton = slider.querySelector(".slider-button");
+
+        let isDragging = false;
+
+        function onDrag(event) {
+          if (!isDragging) return;
+
+          // Get the mouse or touch position
+          const pageX = event.pageX || event.touches[0].pageX;
+          const sliderRect = slider.getBoundingClientRect();
+          const sliderWidth = sliderRect.width;
+
+          // Calculate the new position for the slider line
+          let newLeft = Math.min(
+            Math.max(0, pageX - sliderRect.left),
+            sliderWidth
+          );
+
+          // Adjust the slider line and the "before" image visibility
+          const newWidthPercentage = (newLeft / sliderWidth) * 100;
+          beforeImage.style.clipPath = `inset(0 ${
+            100 - newWidthPercentage
+          }% 0 0)`;
+          sliderLine.style.left = `${newLeft}px`;
+        }
+
+        // Start dragging
+        sliderButton.addEventListener("mousedown", () => {
+          isDragging = true;
+          document.addEventListener("mousemove", onDrag);
+        });
+
+        sliderButton.addEventListener("touchstart", () => {
+          isDragging = true;
+          document.addEventListener("touchmove", onDrag);
+        });
+
+        // Stop dragging
+        document.addEventListener("mouseup", () => {
+          if (isDragging) {
+            isDragging = false;
+            document.removeEventListener("mousemove", onDrag);
+          }
+        });
+
+        document.addEventListener("touchend", () => {
+          if (isDragging) {
+            isDragging = false;
+            document.removeEventListener("touchmove", onDrag);
+          }
+        });
+      }
+
+      // Initialize the slider
+      document.addEventListener("DOMContentLoaded", () => {
+        initializeBeforeAfterSlider(".before-after-slider");
+      });
+    </script>
   </body>
 </html>
