@@ -1,14 +1,131 @@
-@media (max-width: 668px) {
-  .hero-one {
-    height: 80vh;
+@media screen and (max-width: 480px) {
+  .mt-120 {
+    margin-top: 60px;
   }
+  .mb-120 {
+    margin-bottom: 60px;
+  }
+
+  .sub-heading {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .common-btn,
+  .common-btn2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 7px 16px;
+  }
+
+  /* header start */
+  .site-logo {
+    width: 75px;
+    height: 75px;
+    margin: 5px 0;
+  }
+  /* header end */
+
+  /* gallery start */
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* gallery end */
+}
+
+@media (max-width: 667px) {
+}
+
+@media screen and (max-width: 768px) {
+  .mt-120 {
+    margin-top: 80px;
+  }
+  .mb-120 {
+    margin-bottom: 80px;
+  }
+  .sub-heading {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .common-btn,
+  .common-btn2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 9px 18px;
+  }
+
+  /* insta section start */
+  .insta-visit {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .insta-link {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  /* insta section end */
 }
 
 @media (max-width: 992px) {
   .hero-one {
-    height: 70vh;
+    height: 90vh;
+  }
+
+  /* inasta section start */
+  .insta-visit {
+    font-size: 35px;
+    font-weight: 300;
+  }
+
+  .insta-link {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  /* inasta section end */
+}
+
+@media (max-width: 1024px) {
+  .mt-120 {
+    margin-top: 100px;
+  }
+  .mb-120 {
+    margin-bottom: 100px;
   }
 }
 
 @media (max-width: 1320px) {
+}
+
+@media screen and (min-width: 667px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .image-container {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .card {
+    height: 900px;
+  }
 }

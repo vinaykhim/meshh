@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: "Relaway";
+  src: url("../../../public/assets/fonts/Raleway-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Poppins";
   src: url("../../../public/assets/fonts/Poppins-Regular.ttf")
       format("truetype"),
@@ -18,7 +25,7 @@
 :root {
   /*Fonts*/
   --primary-archivo: "Poppins", sans-serif;
-  --secondary-titillium: "Titillium Web", sans-serif;
+  --secodary-relaway: "Relaway", sans-serif;
   /*color*/
   --sub-headding: #0087ff;
   --headiing: #333333;
@@ -72,11 +79,6 @@ img {
   pointer-events: none;
 }
 
-.py-120 {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 /*------------------Start Home Page CSS------------------------*/
 
 /* Hero Section start*/
@@ -111,9 +113,9 @@ img {
   );
 }
 
-.arrow {
-  transform: rotate(-1deg);
-}
+/* .arrow {
+  transform: rotate(-10deg);
+} */
 
 .user-image {
   width: 35px;
@@ -129,7 +131,7 @@ img {
 }
 .card {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
   border: none !important;
   border-radius: 0 !important;
@@ -157,7 +159,7 @@ img {
 
 .card-content {
   position: absolute;
-  bottom: -15%;
+  bottom: -80px;
   left: 0;
   width: 100%;
   padding: 20px;
@@ -169,7 +171,7 @@ img {
   bottom: 0;
 }
 .arrow {
-  transform: rotate(-45deg);
+  transform: rotate(1deg);
 }
 
 /* carousel end */
@@ -225,7 +227,7 @@ img {
 }
 /*marquee end*/
 
-/* Slider line start */
+/* Line Slider start */
 
 .before-after-slider {
   position: relative;
@@ -274,8 +276,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background: #ffffff;
   border: 2px solid #000;
   border-radius: 50%;
@@ -284,7 +286,43 @@ img {
   cursor: pointer;
 }
 
-/* Slider line end */
+/* Line Slider end */
+
+/* Why Choose start */
+.dot_span {
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-color: var(--secondary-color);
+}
+
+/* Why Choose end */
+
+/* Our client start */
+
+.client_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 60px;
+}
+
+.box_client_img {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.box_client_img img {
+  width: 100%;
+  max-width: 100%;
+}
+/* Our client end */
+
+/* insta story start */
+
+/* insta story end */
 
 /*------------------End Home Page CSS------------------------*/
 

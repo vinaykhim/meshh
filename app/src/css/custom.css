@@ -1,6 +1,8 @@
-.py-120 {
-  padding-top: 80px;
-  padding-bottom: 80px;
+.mt-120 {
+  margin-top: 120px;
+}
+.mb-120 {
+  margin-bottom: 120px;
 }
 .background-pimary {
   background-color: var(--primary-color);
@@ -17,12 +19,54 @@
 .text-justify {
   text-align: justify;
 }
+
+.sub-heading {
+  font-size: 25px;
+  line-height: 45px;
+  color: var(--secondary-color);
+  font-family: var(--primary-archivo);
+}
+.heading {
+  font-size: 40px;
+  color: black;
+  font-family: var(--primary-archivo);
+}
+.title {
+  font-size: 18px;
+  line-height: 35px;
+  font-family: var(--secodary-relaway);
+  color: var(--primary-color);
+}
+
+.paragraph {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  font-family: var(--secodary-relaway);
+  color: var(--primary-color);
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  color: var(--primary-color);
+  font-family: var(--secodary-relaway);
+}
+.answer {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--primary-color);
+  font-family: var(--secodary-relaway);
+}
+
 /* buttons start */
 .common-btn {
   width: fit-content;
   font-family: "poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 25px;
   text-align: justify;
   padding: 10px 22px;
@@ -37,8 +81,8 @@
 .common-btn2 {
   width: fit-content;
   font-family: "poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 25px;
   text-align: justify;
   padding: 10px 22px;
@@ -81,3 +125,110 @@
 }
 
 /* what we do section card end */
+
+/* insta gallary start */
+.insta-line {
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: var(--secondary-color);
+}
+
+.insta-visit {
+  font-size: 45px;
+  font-weight: 400;
+  font-family: var(--primary-archivo);
+}
+
+.insta-link {
+  font-size: 34px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-family: var(--primary-archivo);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  row-gap: 0;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+  overflow: hidden;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* insta gallary end */
+
+/* accordian start */
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, padding 1s ease;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 500px;
+  padding: 10px 15px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .accordion-header {
+    font-size: 16px;
+  }
+}
+/* accordian end */
