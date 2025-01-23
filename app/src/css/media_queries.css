@@ -39,6 +39,11 @@
 }
 
 @media (max-width: 667px) {
+  /* what we do section start */
+  .what-card-title {
+    font-size: 25px;
+  }
+  /* what we do section end */
 }
 
 @media screen and (max-width: 768px) {
@@ -103,6 +108,12 @@
   .mb-120 {
     margin-bottom: 100px;
   }
+
+  /* what we do section start */
+  .what-card-title {
+    font-size: 18px;
+  }
+  /* what we do section end */
 }
 
 @media (max-width: 1320px) {
@@ -124,8 +135,38 @@
   }
 }
 
+/* ======================== min media query start ======================= */
+
+@media screen and (min-width: 414px) {
+}
+@media screen and (min-width: 576px) {
+  /* our portfolio start */
+  .portfolio-title {
+    font-size: 18px;
+  }
+  .portfolio-peragraph {
+    font-size: 16px;
+  }
+  /* our portfolio end */
+}
+@media screen and (min-width: 667px) {
+}
+@media screen and (min-width: 1024px) {
+  .portfolio-title {
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+  .portfolio-paragraph {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1320px) {
+}
 @media screen and (min-width: 1540px) {
   .card {
     height: 900px;
   }
 }
+
+/* ======================== min media query start ======================= */
