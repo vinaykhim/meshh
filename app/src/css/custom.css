@@ -113,8 +113,8 @@
   position: absolute;
   width: 70%;
   margin: 0;
-  white-space: none;
   font-size: 25px;
+  white-space: none;
   padding: 1.2rem 1.5rem;
   text-align: left;
   color: #000;
@@ -126,25 +126,6 @@
 }
 
 /* what we do section card end */
-
-/* our portfolio start */
-.portfolio-content {
-  padding-top: 10px;
-}
-.portfolio-title {
-  font-size: 25px;
-  line-height: 32.5px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  font-family: var(--primary-archivo);
-}
-.portfolio-paragraph {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 400;
-  font-family: var(--secodary-relaway);
-}
-/* our portfolio end */
 
 /* insta gallary start */
 .insta-line {
@@ -224,13 +205,18 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
+  background-color: #FAFAFA;
   transition: max-height 1s ease, padding 1s ease;
+}
+.accordion-item{
+  margin-bottom: 50px;
+  border: none !important;
 }
 
 .accordion-item.open .accordion-content {
   max-height: 500px;
-  padding: 10px 15px;
 }
+
 
 .accordion-header {
   cursor: pointer;
@@ -238,14 +224,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #f8f9fa;
-  transition: background-color 0.3s ease;
+  background-color: #FAFAFA;
+  transition: background-color 0.5s ease;
 }
 
 .accordion-header:hover {
   background-color: #e9ecef;
 }
 
+.toggle-btn {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 100%;
+  border: none !important; 
+  outline: none !important; 
+  box-shadow: none !important; 
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  transition: all 0.4s ease;
+}
 @media (max-width: 768px) {
   .accordion-header {
     font-size: 16px;

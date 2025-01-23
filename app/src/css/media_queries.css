@@ -44,6 +44,16 @@
     font-size: 25px;
   }
   /* what we do section end */
+
+  /* accordian start */
+
+  .toggle-btn{
+    width: 25px;
+    height: 22px;
+    font-size: 1rem;
+  }
+
+  /* accordian end */
 }
 
 @media screen and (max-width: 768px) {
