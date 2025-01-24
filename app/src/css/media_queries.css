@@ -105,6 +105,18 @@
     font-weight: 300;
   }
   /* inasta section end */
+
+  /* ========= testamonial start ======= */
+  .testimonial_box > div:nth-child(1) {
+    border-right: 1px solid rgba(128, 128, 128, 0.2);
+  }
+  .testimonial_box > div:nth-child(2) {
+    border-right: none !important;
+  }
+  .testimonial_box > div:nth-child(3) {
+    border-right: 1px solid rgba(128, 128, 128, 0.2);
+  }
+  /* testamonial end */
 }
 
 @media (max-width: 768px) {
@@ -121,6 +133,9 @@
 
   .heading {
     font-size: 30px;
+  }
+  .title {
+    text-align: justify;
   }
 
   .common-btn,
@@ -224,6 +239,13 @@
     width: 80%;
   }
   /* what to do end */
+
+  /* ========  blog start  ========== */
+  .img_border_change img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  /* blog end */
 }
 
 @media (max-width: 480px) {
@@ -314,8 +336,26 @@
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
-
   /* gallery end */
+
+  /* ========= testamonial start ======= */
+  .testimonial_box > div {
+    border-right: none !important;
+  }
+  /* testamonial end */
+
+  /* ============ Accordian start ================ */
+  .question {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .answer {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  /* Accordian end  */
 }
 
 @media screen and (min-width: 667px) {

@@ -210,8 +210,8 @@ img {
 }
 .slider-arrow {
   color: var(--secondary-color);
-  transform: translateY(-5px) rotate(-35deg);
-  font-size: 40px;
+  transform: translateY(-5px) rotate(45deg);
+  font-size: 35px;
 }
 
 /* carousel end */
