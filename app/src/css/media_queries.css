@@ -1,62 +1,113 @@
-@media screen and (max-width: 480px) {
-  .mt-120 {
-    margin-top: 60px;
-  }
-  .mb-120 {
-    margin-bottom: 60px;
-  }
-
-  .sub-heading {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  .heading {
-    font-size: 25px;
-  }
-
-  .common-btn,
-  .common-btn2 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 7px 16px;
-  }
-
-  /* header start */
-  .site-logo {
-    width: 75px;
-    height: 75px;
-    margin: 5px 0;
-  }
-  /* header end */
-
-  /* gallery start */
-  .gallery {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  /* gallery end */
+@media (max-width: 1320px) {
 }
 
-@media (max-width: 667px) {
-  /* what we do section start */
+@media (max-width: 1200px) {
+  /*  welcome section start */
+
+  .welcome-to-top {
+    width: 100%;
+    height: 100%;
+    right: 25;
+  }
+  .welcome-to-bottom {
+    width: 0;
+    height: 0;
+  }
+  .welcome-to-message {
+    width: 50%;
+    bottom: 4px;
+    right: 29px;
+    padding: 5px auto;
+  }
+
+  /* ========= what we do section start ========*/
   .what-card-title {
-    font-size: 25px;
+    width: 80%;
+    font-size: 22px;
   }
   /* what we do section end */
 
-  /* accordian start */
-
-  .toggle-btn{
-    width: 25px;
-    height: 22px;
-    font-size: 1rem;
-  }
-
-  /* accordian end */
+  /*  welcome section end */
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
+  .mt-120 {
+    margin-top: 100px;
+  }
+  .mb-120 {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1320px) {
+  .hiro-heading {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .hiro-heading span {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-one p {
+    text-align: justify;
+  }
+
+  /*  welcome section start */
+  .welcome-to {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+  }
+  .welcome-to-top {
+    width: 60%;
+    height: 80%;
+    right: 0;
+  }
+  .welcome-to-bottom {
+    width: 60%;
+    height: 80%;
+    left: 0;
+  }
+  .welcome-to-message {
+    width: 40%;
+    bottom: 4px;
+    right: 4px;
+  }
+
+  /*======== marquee start ======= */
+  .marquee-item span {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 15px;
+  }
+  .marquee-item img {
+    width: 35px;
+  }
+  /* marquee start */
+
+  /* ========= what we do section start ========*/
+  .what-card-title {
+    font-size: 22px;
+  }
+  /* what we do section end */
+
+  /* inasta section start */
+  .insta-visit {
+    font-size: 35px;
+    font-weight: 300;
+  }
+
+  .insta-link {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  /* inasta section end */
+}
+
+@media (max-width: 768px) {
   .mt-120 {
     margin-top: 80px;
   }
@@ -80,6 +131,30 @@
     padding: 9px 18px;
   }
 
+  /*======== welcome section start ========*/
+  .welcome-to-top {
+    width: 58%;
+    height: 75%;
+  }
+  .welcome-to-bottom {
+    width: 60%;
+    height: 58%;
+  }
+  .welcome-to-message {
+    bottom: 4px;
+    right: 4px;
+    padding: 5px auto;
+  }
+  /*  welcome section end */
+
+  /* ======== what to do start ========= */
+  .what-card-title {
+    width: 85%;
+    padding: 1rem 1.2rem;
+    font-size: 22px;
+  }
+  /*  what to do end  */
+
   /* insta section start */
   .insta-visit {
     font-size: 30px;
@@ -93,31 +168,48 @@
   /* insta section end */
 }
 
-@media (max-width: 992px) {
-  .hero-one {
-    height: 90vh;
+@media (max-width: 667px) {
+  .hiro-heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hiro-heading span {
+    font-size: 40px;
+    line-height: 50px;
   }
 
-  /* inasta section start */
-  .insta-visit {
-    font-size: 35px;
-    font-weight: 300;
+  /*========= welcome section start ========*/
+  .welcome-to {
+    width: 100%;
+    height: 450px;
+  }
+  .welcome-to-top {
+    width: 58%;
+    height: 75%;
+  }
+  .welcome-to-bottom {
+    width: 60%;
+    height: 60%;
+  }
+  .welcome-to-message {
+    bottom: 4px;
+    right: 4px;
+    padding: 5px auto;
   }
 
-  .insta-link {
-    font-size: 30px;
-    font-weight: 300;
-  }
-  /* inasta section end */
-}
+  /*  welcome section end
 
-@media (max-width: 1024px) {
-  .mt-120 {
-    margin-top: 100px;
+  /*======== marquee start ======= */
+  .marquee-item span {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0 10px;
   }
-  .mb-120 {
-    margin-bottom: 100px;
+  .marquee-item img {
+    width: 30px;
   }
+
+  /* marquee start */
 
   /* what we do section start */
   .what-card-title {
@@ -126,7 +218,104 @@
   /* what we do section end */
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 575px) {
+  /* ======== what to do start ========= */
+  .what-card-title {
+    width: 80%;
+  }
+  /* what to do end */
+}
+
+@media (max-width: 480px) {
+  .mt-120 {
+    margin-top: 60px;
+  }
+  .mb-120 {
+    margin-bottom: 60px;
+  }
+
+  .sub-heading {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .hiro-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hiro-heading span {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .common-btn,
+  .common-btn2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 7px 16px;
+  }
+
+  /* header start */
+  .site-logo {
+    width: 75px;
+    height: 75px;
+    margin: 5px 0;
+  }
+  /* header end */
+
+  /*  welcome section start */
+  .welcome-to {
+    width: 100%;
+    height: 400px;
+  }
+  .welcome-to-top {
+    width: 100%;
+    height: 100%;
+    right: 0;
+  }
+  .welcome-to-bottom {
+    width: 0;
+    height: 0;
+  }
+  .welcome-to-message {
+    width: 50%;
+    bottom: 4px;
+    right: 4px;
+    padding: 5px auto;
+  }
+
+  /*  welcome section end */
+
+  /*======== marquee start ======= */
+  .marquee-item span {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  .marquee-item img {
+    width: 25px;
+  }
+
+  /* marquee end */
+
+  /* ======== what to do start ========= */
+  .what-card-title {
+    width: 70%;
+    font-size: 22px;
+  }
+  /* what to do end */
+
+  /*======== gallery start ======== */
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* gallery end */
 }
 
 @media screen and (min-width: 667px) {
@@ -148,6 +337,26 @@
 /* ======================== min media query start ======================= */
 
 @media screen and (min-width: 414px) {
+  /*  welcome section start */
+  /* .welcome-to {
+    width: 100%;
+    height: 450px;
+  }
+  .welcome-to-top {
+    width: 58%;
+    height: 75%;
+  }
+  .welcome-to-bottom {
+    width: 60%;
+    height: 60%;
+  }
+  .welcome-to-message {
+    bottom: 4px;
+    right: 4px;
+    padding: 5px auto;
+  } */
+
+  /*  welcome section end */
 }
 @media screen and (min-width: 576px) {
   /* our portfolio start */
@@ -160,8 +369,30 @@
   /* our portfolio end */
 }
 @media screen and (min-width: 667px) {
+  /* welcome section start */
+  /* .welcome-to {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+  }
+  .welcome-to-top {
+    width: 60%;
+    height: 80%;
+    right: 0;
+  }
+  .welcome-to-bottom {
+    width: 60%;
+    height: 80%;
+    left: 0;
+  }
+  .welcome-to-message {
+    width: 40%;
+    bottom: 4px;
+    right: 4px;
+  } */
 }
 @media screen and (min-width: 1024px) {
+  /* our portfolio start */
   .portfolio-title {
     font-size: 25px;
     line-height: 32.5px;
@@ -170,6 +401,7 @@
     font-size: 16px;
     line-height: 30px;
   }
+  /* our portfolio end */
 }
 @media screen and (min-width: 1320px) {
 }
