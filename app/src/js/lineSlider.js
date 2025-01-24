@@ -2,12 +2,7 @@ function initializeBeforeAfterSlider(sliderSelector) {
   const slider = document.querySelector(sliderSelector);
   const beforeImage = slider.querySelector(".before-image");
   const sliderLine = slider.querySelector(".slider-line");
-  const sliderButton = slider.querySelector(".slider-button");
-  const leftArrow = slider.querySelector("#left-move");
-  const rightArrow = slider.querySelector("#right-move");
   const sliderWidth = slider.getBoundingClientRect().width;
-
-  let isDragging = false;
 
   function updateSlider(newLeft) {
     newLeft = Math.min(Math.max(0, newLeft), sliderWidth);
@@ -17,49 +12,16 @@ function initializeBeforeAfterSlider(sliderSelector) {
     sliderLine.style.left = `${newLeft}px`;
   }
 
-  function onDrag(event) {
-    if (!isDragging) return;
-    const pageX = event.pageX || event.touches[0].pageX;
+  function onMouseMove(event) {
+    const pageX = event.pageX || event.touches?.[0]?.pageX;
     const sliderRect = slider.getBoundingClientRect();
     const newLeft = pageX - sliderRect.left;
 
     updateSlider(newLeft);
   }
 
-  sliderButton.addEventListener("mousedown", () => {
-    isDragging = true;
-    document.addEventListener("mousemove", onDrag);
-  });
-
-  sliderButton.addEventListener("touchstart", () => {
-    isDragging = true;
-    document.addEventListener("touchmove", onDrag);
-  });
-
-  document.addEventListener("mouseup", () => {
-    if (isDragging) {
-      isDragging = false;
-      document.removeEventListener("mousemove", onDrag);
-    }
-  });
-
-  document.addEventListener("touchend", () => {
-    if (isDragging) {
-      isDragging = false;
-      document.removeEventListener("touchmove", onDrag);
-    }
-  });
-
-  leftArrow.addEventListener("click", () => {
-    const currentLeft = parseFloat(sliderLine.style.left) || sliderWidth / 2;
-    const moveLeft = currentLeft - sliderWidth * 0.001;
-    updateSlider(moveLeft);
-  });
-  rightArrow.addEventListener("click", () => {
-    const currentLeft = parseFloat(sliderLine.style.left) || sliderWidth / 2;
-    const moveRight = currentLeft + sliderWidth * 0.001;
-    updateSlider(moveRight);
-  });
+  slider.addEventListener("mousemove", onMouseMove);
+  slider.addEventListener("touchmove", onMouseMove);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

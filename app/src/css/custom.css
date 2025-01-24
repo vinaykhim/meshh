@@ -20,6 +20,27 @@
   text-align: justify;
 }
 
+.hiro-heading {
+  font-size: 55px;
+  line-height: 70px;
+  color: white;
+  font-family: var(--primary-archivo);
+}
+
+.heading-secondary {
+  font-size: 55px;
+  line-height: 70px;
+  color: var(--secondary-color);
+  font-family: var(--primary-archivo);
+}
+
+.hiro-heading span {
+  font-size: 55px;
+  line-height: 70px;
+  color: var(--secondary-color);
+  font-family: var(--primary-archivo);
+}
+
 .sub-heading {
   font-size: 25px;
   line-height: 45px;
@@ -27,7 +48,7 @@
   font-family: var(--primary-archivo);
 }
 .heading {
-  font-size: 40px;
+  font-size: 42px;
   color: black;
   font-family: var(--primary-archivo);
 }
@@ -44,6 +65,11 @@
   line-height: 25px;
   font-family: var(--secodary-relaway);
   color: var(--primary-color);
+}
+.paragraph1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .question {
@@ -68,7 +94,8 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
-  text-align: justify;
+  text-wrap: none;
+  text-align: start;
   padding: 10px 22px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -84,7 +111,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
-  text-align: justify;
+  text-align: start;
   padding: 10px 22px;
   background-color: white;
   color: var(--primary-color);
@@ -111,11 +138,11 @@
 }
 .what-card-title {
   position: absolute;
-  width: 70%;
+  width: 75%;
   margin: 0;
   font-size: 25px;
   white-space: none;
-  padding: 1.2rem 1.5rem;
+  padding: 1.2rem 1.2rem;
   text-align: left;
   color: #000;
   background-color: #fff;
@@ -205,10 +232,10 @@
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   transition: max-height 1s ease, padding 1s ease;
 }
-.accordion-item{
+.accordion-item {
   margin-bottom: 50px;
   border: none !important;
 }
@@ -217,14 +244,13 @@
   max-height: 500px;
 }
 
-
 .accordion-header {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   transition: background-color 0.5s ease;
 }
 
@@ -238,9 +264,9 @@
   text-align: center;
   font-size: 1.6rem;
   border-radius: 100%;
-  border: none !important; 
-  outline: none !important; 
-  box-shadow: none !important; 
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   transition: all 0.4s ease;
