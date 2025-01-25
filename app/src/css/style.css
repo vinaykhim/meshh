@@ -86,8 +86,8 @@ img {
   height: auto;
 }
 .hero-one {
-  height: auto;
-  padding: 50px 0;
+  padding: 0;
+  z-index: 1;
 }
 .hero-one p {
   text-align: start;
@@ -117,14 +117,6 @@ img {
     rgba(255, 194, 0, 0.1)
   );
 }
-
-/* .arrow {
-  transform: rotate(-10deg);
-} */
-
-/* .user-reviews div {
-  width: ;
-} */
 
 .user-reviews {
   height: 40px;
@@ -412,9 +404,95 @@ img {
 /*------------------End Home Page CSS------------------------*/
 
 /*------------------Start About Page CSS------------------------*/
-/*Hero Section*/
+/* ========= Hero Section Start  ==========*/
 
-/*Welcome to meshh*/
+.about_headding {
+  font-size: 55px !important;
+  line-height: 70px !important;
+  color: white;
+  font-family: var(--primary-archivo);
+}
+
+.about_headding span {
+  font-size: 55px !important;
+  line-height: 70px !important;
+  color: var(--secondary-color);
+  font-family: var(--primary-archivo);
+}
+
+.about_hero {
+  height: 50vh;
+}
+
+.about_hero_content {
+  text-align: center;
+  margin-top: 150px !important;
+  margin-bottom: 75px !important;
+}
+.about_hero_content h1 {
+  padding-bottom: 50px;
+}
+/* Hero Section End */
+
+/*Welcome to meshh start*/
+
+.about_welcome_img {
+  width: 90%;
+  height: auto;
+}
+/*Welcome to meshh end*/
+
+/* vision and misstion start */
+.vision_mission_img {
+  border-radius: 20px;
+  height: auto;
+}
+.vision_mission_img img {
+  height: auto;
+  object-fit: contain;
+}
+.vision_mission_img > div {
+  display: flex;
+  align-items: end;
+  border-radius: 20px;
+  justify-content: start;
+  padding: 50px;
+  background: linear-gradient(
+    to top,
+    rgba(2, 1, 5, 0.6),
+    rgba(2, 1, 5, 0.6),
+    rgba(2, 1, 5, 0)
+  );
+}
+
+.vision_mission_img > div > div {
+  width: 70%;
+}
+
+.vision_mission_img h3 {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 500;
+}
+.vision_mission_img p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  font-family: var(--secodary-relaway);
+  color: #d6d6d6;
+}
+/* vision and misstion end */
+
+.about_user_sec_background_img {
+  width: 100%;
+  height: 625px;
+  border-radius: 20px;
+  background-image: url("../../../public/assets/images/About/office.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*marquee*/
 
