@@ -13,6 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("../../../public/assets/fonts/Poppins-Regular.ttf")
@@ -22,10 +23,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Arizonia";
+  src: url("../../../public/assets/fonts/Arizonia-Regular.ttf")
+      format("truetype"),
+    url("../../../public/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   /*Fonts*/
   --primary-archivo: "Poppins", sans-serif;
   --secodary-relaway: "Relaway", sans-serif;
+  --third-arizonia: "Arizonia", "sans-serif";
   /*color*/
   --sub-headding: #0087ff;
   --headiing: #333333;
@@ -86,8 +96,8 @@ img {
   height: auto;
 }
 .hero-one {
-  height: auto;
-  padding: 50px 0;
+  padding: 0;
+  z-index: 1;
 }
 .hero-one p {
   text-align: start;
@@ -117,14 +127,6 @@ img {
     rgba(255, 194, 0, 0.1)
   );
 }
-
-/* .arrow {
-  transform: rotate(-10deg);
-} */
-
-/* .user-reviews div {
-  width: ;
-} */
 
 .user-reviews {
   height: 40px;
@@ -210,8 +212,8 @@ img {
 }
 .slider-arrow {
   color: var(--secondary-color);
-  transform: translateY(-5px) rotate(-35deg);
-  font-size: 40px;
+  transform: translateY(-5px) rotate(45deg);
+  font-size: 35px;
 }
 
 /* carousel end */
@@ -412,10 +414,211 @@ img {
 /*------------------End Home Page CSS------------------------*/
 
 /*------------------Start About Page CSS------------------------*/
-/*Hero Section*/
+/* ========= Hero Section Start  ==========*/
 
-/*Welcome to meshh*/
+.about_headding {
+  font-size: 55px !important;
+  line-height: 70px !important;
+  color: white;
+  font-family: var(--primary-archivo);
+}
+
+.about_headding span {
+  font-size: 55px !important;
+  line-height: 70px !important;
+  color: var(--secondary-color);
+  font-family: var(--primary-archivo);
+}
+
+.about_hero {
+  height: 50vh;
+}
+
+.about_hero_content {
+  text-align: center;
+  margin-top: 150px !important;
+  margin-bottom: 75px !important;
+}
+.about_hero_content h1 {
+  padding-bottom: 50px;
+}
+/* Hero Section End */
+
+/*Welcome to meshh start*/
+
+.about_welcome_img {
+  width: 90%;
+  height: auto;
+}
+/*Welcome to meshh end*/
+
+/* vision and misstion start */
+.vision_mission_img {
+  border-radius: 20px;
+  height: auto;
+}
+.vision_mission_img img {
+  height: auto;
+  object-fit: contain;
+}
+.vision_mission_img > div {
+  display: flex;
+  align-items: end;
+  border-radius: 20px;
+  justify-content: start;
+  padding: 50px;
+  background: linear-gradient(
+    to top,
+    rgba(2, 1, 5, 0.6),
+    rgba(2, 1, 5, 0.6),
+    rgba(2, 1, 5, 0)
+  );
+}
+
+.vision_mission_img > div > div {
+  width: 70%;
+}
+
+.vision_mission_img h3 {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 500;
+}
+.vision_mission_img p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: justify;
+  font-family: var(--secodary-relaway);
+  color: #d6d6d6;
+}
+/* vision and misstion end */
+
+.about_user_sec_background_img {
+  width: 100%;
+  height: 625px;
+  border-radius: 20px;
+  background-image: url("../../../public/assets/images/About/office.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*marquee*/
 
 /*------------------End About Page CSS------------------------*/
+
+/*-------------------- Start Services Page CSS ---------------*/
+
+.service_hero img {
+  width: 100%;
+  height: 100vh;
+}
+.service_hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.service_hero_content {
+  z-index: 2;
+}
+
+/* ==============  video start ============ */
+/* ==============  video start ============ */
+
+.service_video .play_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.play_button_div1,
+.play_button_div2,
+.play_button_div3 {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.play_button_div1 {
+  background-color: var(--secondary-color);
+}
+.play_button_div2 {
+  background-color: orange;
+}
+.play_button_div3 {
+  background-color: white;
+  cursor: pointer;
+}
+.play_button_div3:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* ==============  video end ============ */
+
+/* Fullscreen Video */
+.fullscreen-video {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.video-overlay {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+/*-------------------- End Services Page CSS ---------------*/

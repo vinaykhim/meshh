@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Domura</title>
+    <title>Meshh</title>
 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -34,7 +34,7 @@
           <nav
             class="position-relative d-flex justify-content-between align-items-stretch ps-3 pe-2 m-0"
           >
-            <a>
+            <a href="#">
               <img class="site-logo" src="assets/logos/logo.svg" />
             </a>
             <div
@@ -44,11 +44,17 @@
                 class="menu fs-6 d-none d-md-flex h-auto m-0 gap-3 gap-lg-4 list-unstyled text-nowrap"
               >
                 <li class="">
-                  <a href="#">Our Offering</a>
+                  <a href="../app/src/html/services.html" target="_self"
+                    >Our Offering</a
+                  >
                 </li>
                 <li><a href="#"> Our Expertise</a></li>
                 <li><a href="#"> Our Project</a></li>
-                <li><a href="#">Our Story</a></li>
+                <li>
+                  <a href="../app/src/html/about.html" target="_self"
+                    >Our Story</a
+                  >
+                </li>
                 <li><a href="#">Blog</a></li>
               </ul>
               <button class="common-btn text-nowrap">Contact US</button>
@@ -59,11 +65,17 @@
                   class="h-auto d-flex text-start flex-column m-2 gap-4 list-unstyled text-nowrap"
                 >
                   <li class="">
-                    <a href="#">Our Offering</a>
+                    <a href="../app/src/html/services.html" target="_self"
+                      >Our Offering</a
+                    >
                   </li>
                   <li><a href="#"> Our Expertise</a></li>
                   <li><a href="#"> Our Project</a></li>
-                  <li><a href="#">Our Story</a></li>
+                  <li>
+                    <a href="../app/src/html/about.html" target="_self"
+                      >Our Story</a
+                    >
+                  </li>
                   <li><a href="#">Blog</a></li>
                 </ul>
               </div>
@@ -92,7 +104,9 @@
 
               <!-- contect part start -->
               <div class="row px-2 m-0 h-100">
-                <div class="d-none d-lg-block col-md-3 position-relative">
+                <div
+                  class="d-none d-md-block d-lg-none d-xl-block col-md-3 col-lg-0 col-xl-3 position-relative"
+                >
                   <img
                     class="position-absolute top-50 ms-4 w-50 h-auto"
                     src="./assets/images/hero/img4.png"
@@ -100,7 +114,7 @@
                 </div>
                 <!-- main content start -->
                 <div
-                  class="col-12 col-lg-9 px-2 px-md-5 d-flex align-items-center overflow-hidden m-0"
+                  class="col-12 col-md-9 col-lg-12 col-xl-9 px-2 px-md-5 d-flex align-items-center overflow-hidden m-0"
                 >
                   <div
                     class="hero-one align-items-center justify-content-center"
@@ -119,20 +133,22 @@
                           Luctus Libero A.
                         </p>
                       </div>
-                      <div class="d-flex justify-content-start">
+                      <div
+                        class="d-flex justify-content-md-start justify-content-center"
+                      >
                         <div class="d-flex align-items-start py-4">
                           <button class="common-btn text-nowrap">
                             Discover More
                           </button>
                         </div>
-                        <div class="d-none d-lg-block">
+                        <!-- <div class="d-none d-lg-block">
                           <img
                             class="arrow"
                             src="assets/images/hero/line-design.png"
                             width="180px"
                             height="180px"
                           />
-                        </div>
+                        </div> -->
                       </div>
                       <div
                         class="user-reviews mt-2 d-flex gap-3 text-white align-items-center flex-nowrap"
@@ -190,9 +206,7 @@
                           class="d-flex fs-5 justify-content-between flex-nowrap align-items-center"
                         >
                           <h3 class="sub-heading">Marriage Event</h3>
-                          <i
-                            class="slider-arrow fa-solid fa-arrow-right-long fs-4"
-                          ></i>
+                          <span class="slider-arrow">&#8593;</span>
                         </div>
                         <p class="paragraph text-white mb-3">
                           Lorem Ipsum is simply dummy text of the printing and
@@ -217,9 +231,7 @@
                           class="d-flex justify-content-between flex-nowrap align-items-center"
                         >
                           <h3 class="sub-heading">corporate event</h3>
-                          <i
-                            class="slider-arrow fa-solid fa-arrow-right-long fs-4"
-                          ></i>
+                          <span class="slider-arrow">&#8593;</span>
                         </div>
                         <p class="paragraph text-white mb-3">
                           Lorem Ipsum is simply dummy text of the printing and
@@ -244,9 +256,7 @@
                           class="d-flex justify-content-between flex-nowrap align-items-center"
                         >
                           <h3 class="sub-heading">Marriage Event</h3>
-                          <i
-                            class="slider-arrow fa-solid fa-arrow-right-long fs-4"
-                          ></i>
+                          <span class="slider-arrow">&#8593;</span>
                         </div>
                         <p class="paragraph text-white mb-3">
                           Lorem Ipsum is simply dummy text of the printing and
@@ -271,7 +281,9 @@
           <div class="w-100 m-0 p-0 bg-white py-one">
             <div class="container mt-120">
               <div class="row">
-                <div class="welcome-to col-12 col-lg-6 position-relative">
+                <div
+                  class="welcome-to col-12 col-lg-6 position-relative mb-3 mb-lg-0"
+                >
                   <div class="welcome-to-top p-1">
                     <img src="./assets/images/crafting/image-top.png" />
                   </div>
@@ -416,19 +428,20 @@
         <!-- Marquee end -->
 
         <!-- what we do start -->
-        <section class="bg-white border">
+        <section class="bg-white">
           <div class="container mt-120">
             <div
-              class="d-flex w-100 w-lg-75 text-justify flex-column gap-2 justify-content-center align-items-center mx-auto mb-4"
+              class="row align-items-center justify-content-center text-center"
             >
-              <h4 class="sub-heading">What We Do</h4>
-              <h2 class="heading">The Best Services We Provide</h2>
-              <p class="title">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptas aliquid modi nemo dolores rem quis provident neque
-                tenetur, repudiandae amet consectetur earum laborum rerum illum
-                excepturi minima deleniti est? Ex!
-              </p>
+              <div class="col-12 col-lg-9 mb-2 mb-lg-4">
+                <h3 class="sub-heading">What We Do</h3>
+                <h2 class="heading">The Best Services We Provide</h2>
+                <p class="title">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an.
+                </p>
+              </div>
             </div>
             <div class="row g-4 justify-content-center">
               <div
@@ -687,15 +700,17 @@
           <div class="bg-white mt-120">
             <div class="container">
               <div
-                class="d-flex w-100 w-lg-75 text-justify flex-column gap-2 justify-content-center align-items-center mx-auto mb-4"
+                class="row align-items-center justify-content-center text-center"
               >
-                <h4 class="sub-heading">Our Portfolio</h4>
-                <h2 class="heading">The best Projects & Work</h2>
-                <p class="title">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an.
-                </p>
+                <div class="col-12 col-lg-9 mb-2 mb-lg-4">
+                  <h3 class="sub-heading">Our Portfolio</h3>
+                  <h2 class="heading">The best Projects & Work</h2>
+                  <p class="title">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an.
+                  </p>
+                </div>
               </div>
               <div class="row g-3">
                 <div class="col-12 col-sm-6 d-flex justify-content-center">
@@ -706,6 +721,9 @@
                         alt="Marriage Event"
                         class="card-img-top w-100 h-100"
                       />
+                      <div class="overlay1">
+                        <span>&#8593;</span>
+                      </div>
                     </div>
                     <div class="container-fluid">
                       <div class="portfolio-content text-start my-4">
@@ -731,6 +749,9 @@
                         alt="Marriage Event"
                         class="card-img-top w-100 h-100"
                       />
+                      <div class="overlay1">
+                        <span>&#8593;</span>
+                      </div>
                     </div>
                     <div class="container-fluid">
                       <div class="portfolio-content text-justify my-4">
@@ -756,6 +777,9 @@
                         alt="Marriage Event"
                         class="card-img-top w-100 h-100"
                       />
+                      <div class="overlay1">
+                        <span>&#8593;</span>
+                      </div>
                     </div>
                     <div class="container-fluid">
                       <div class="portfolio-content text-justify my-4">
@@ -781,6 +805,9 @@
                         alt="Marriage Event"
                         class="card-img-top w-100 h-100"
                       />
+                      <div class="overlay1">
+                        <span>&#8593;</span>
+                      </div>
                     </div>
                     <div class="container-fluid">
                       <div class="portfolio-content text-justify my-4">
@@ -806,6 +833,9 @@
                         alt="Marriage Event"
                         class="card-img-top w-100 h-100"
                       />
+                      <div class="overlay1">
+                        <span>&#8593;</span>
+                      </div>
                     </div>
                     <div class="container-fluid">
                       <div class="portfolio-content text-justify my-4">
@@ -831,6 +861,9 @@
                         alt="Marriage Event"
                         class="card-img-top w-100 h-100"
                       />
+                      <div class="overlay1">
+                        <span>&#8593;</span>
+                      </div>
                     </div>
                     <div class="container-fluid">
                       <div class="portfolio-content text-justify my-4">
@@ -847,6 +880,12 @@
                   </div>
                 </div>
               </div>
+              <div class="row align-items-center justify-content-center mt-3">
+                <button class="common-btn2">
+                  <span class="">Learne More</span>
+                  <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -859,10 +898,10 @@
               <div
                 class="row align-items-center justify-content-center text-center"
               >
-                <div class="col-12 col-lg-9">
+                <div class="col-12 col-lg-9 mb-2 mb-lg-4">
                   <h3 class="sub-heading">Our Client</h3>
                   <h2 class="heading">Our Client</h2>
-                  <p class="portfolio-title">
+                  <p class="title">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an.
@@ -942,7 +981,7 @@
                         target="_blank"
                         class="overlay-text"
                       >
-                        <i class="bi bi-instagram fs-1"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </div>
                   </div>
@@ -957,7 +996,7 @@
                         target="_blank"
                         class="overlay-text"
                       >
-                        <i class="bi bi-instagram fs-1"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </div>
                   </div>
@@ -975,7 +1014,7 @@
                         target="_blank"
                         class="overlay-text"
                       >
-                        <i class="bi bi-instagram fs-1"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </div>
                   </div>
@@ -990,7 +1029,7 @@
                         target="_blank"
                         class="overlay-text"
                       >
-                        <i class="bi bi-instagram fs-1"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </div>
                   </div>
@@ -1008,7 +1047,7 @@
                         target="_blank"
                         class="overlay-text"
                       >
-                        <i class="bi bi-instagram fs-1"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </div>
                   </div>
@@ -1023,7 +1062,7 @@
                         target="_blank"
                         class="overlay-text"
                       >
-                        <i class="bi bi-instagram fs-1"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </div>
                   </div>
@@ -1041,7 +1080,7 @@
                         target="_blank"
                         class="overlay-text"
                       >
-                        <i class="bi bi-instagram fs-1"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </div>
                   </div>
@@ -1056,7 +1095,7 @@
                         target="_blank"
                         class="overlay-text"
                       >
-                        <i class="bi bi-instagram fs-1"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
                       </a>
                     </div>
                   </div>
@@ -1067,16 +1106,94 @@
         </section>
         <!-- insta end -->
 
+        <!-- Client Testimonial start -->
+        <section class="mt-120">
+          <div class="testamonial container">
+            <div
+              class="row align-items-center justify-content-center text-center"
+            >
+              <div class="col-12 col-lg-5 mb-2 mb-lg-4">
+                <h3 class="sub-heading">Clients Testimonial</h3>
+                <h2 class="heading">We Provide Quality The Best Services</h2>
+                <p class="title">
+                  Lorem Ipsum is simply dummy a of the printing and type setting
+                  industry Loreaim Ipsum has been
+                </p>
+              </div>
+              <div
+                class="px-5 col-12 col-lg-7 d-flex flex-column justify-content-center align-content-center border rounded-1 position-relative"
+              >
+                <div
+                  class="testamonial_sec2 d-flex align-items-center justify-content-center gap-2"
+                >
+                  <span class="bg-white border">&lt;</span>
+                  <img src="./assets/images/testamonial/user.jpeg" />
+                  <span class="bg-white border">&gt;</span>
+                </div>
+                <div class="my-5 position-relative">
+                  <hr />
+                  <i class="testamonial_sec2_line fa-solid fa-quote-right"></i>
+                  <!-- <span class="testamonial_sec2_line">&rdquo;</span> -->
+                </div>
+                <p class="testamonial_para mt-2 mb-5 pb-5">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been Lorem Ipsum is
+                  simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been.
+                </p>
+              </div>
+            </div>
+            <div class="row testimonial_box g-4 py-4 border">
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div
+                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                >
+                  <h2>15+</h2>
+                  <p>Year of Experience</p>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div
+                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                >
+                  <h2>600+</h2>
+                  <p>Success Projects</p>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div
+                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                >
+                  <h2>40+</h2>
+                  <p>Team Member</p>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div
+                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                >
+                  <h2>500+</h2>
+                  <p>Happy Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Client Tesimonial end-->
+
         <!-- accordian start -->
         <section class="bg-white">
           <div class="mt-120">
             <div class="container">
               <div
-                class="row align-items-center justify-content-center text-center mb-5"
+                class="row align-items-center justify-content-center text-center"
               >
-                <div class="col-12 col-lg-9">
-                  <h3 class="sub-heading">Our Portfolio</h3>
-                  <h2 class="heading">The best Projects & Work</h2>
+                <div class="col-12 col-lg-9 mb-2 mb-lg-4">
+                  <h3 class="sub-heading">FAQ</h3>
+                  <h2 class="heading">Frequently asked questions</h2>
                   <p class="title">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -1085,15 +1202,19 @@
                 </div>
               </div>
               <!-- Accordion Container -->
-              <div id="accordion-container">
+              <div id="accordion-container ">
                 <div class="accordion-item">
-                  <div class="accordion-header d-flex justify-content-between">
-                    <span class="question"
+                  <div
+                    class="accordion-header d-flex justify-content-between position-relative"
+                  >
+                    <span class="question question_span"
                       >Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       In, ipsam?</span
                     >
-                    <button class="toggle-btn">+</button>
+                    <span id="plus" class="accordian-control">&#43;</span>
+                    <span id="minus" class="accordian-control">&#8722;</span>
                   </div>
+                  <hr />
                   <div class="accordion-content">
                     <div class="answer">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1108,55 +1229,17 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <div class="accordion-header d-flex justify-content-between">
-                    <span class="question"
-                      >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Earum, voluptatem!</span
-                    >
-                    <button class="toggle-btn">+</button>
-                  </div>
-                  <div class="accordion-content">
-                    <div class="answer">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Autem dolores recusandae ullam cumque ad repellat magnam
-                      optio blanditiis harum, quam minima velit at itaque
-                      reiciendis quibusdam culpa consectetur libero natus quo
-                      amet alias necessitatibus. Rem, excepturi voluptas,
-                      exercitationem quo beatae magnam necessitatibus
-                      consectetur architecto ipsa quasi ex laudantium iusto
-                      mollitia!
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <div class="accordion-header d-flex justify-content-between">
-                    <span class="question"
-                      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Soluta, nostrum!</span
-                    >
-                    <button class="toggle-btn">+</button>
-                  </div>
-                  <div class="accordion-content">
-                    <div class="answer">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Autem dolores recusandae ullam cumque ad repellat magnam
-                      optio blanditiis harum, quam minima velit at itaque
-                      reiciendis quibusdam culpa consectetur libero natus quo
-                      amet alias necessitatibus. Rem, excepturi voluptas,
-                      exercitationem quo beatae magnam necessitatibus
-                      consectetur architecto ipsa quasi ex laudantium iusto
-                      mollitia!
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <div class="accordion-header d-flex justify-content-between">
-                    <span class="question"
+                  <div
+                    class="accordion-header d-flex justify-content-between position-relative"
+                  >
+                    <span class="question question_span"
                       >Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       In, ipsam?</span
                     >
-                    <button class="toggle-btn">+</button>
+                    <span id="plus" class="accordian-control">&#43;</span>
+                    <span id="minus" class="accordian-control">&#8722;</span>
                   </div>
+                  <hr />
                   <div class="accordion-content">
                     <div class="answer">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1171,13 +1254,17 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <div class="accordion-header d-flex justify-content-between">
-                    <span class="question"
-                      >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Earum, voluptatem!</span
+                  <div
+                    class="accordion-header d-flex justify-content-between position-relative"
+                  >
+                    <span class="question question_span"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      In, ipsam?</span
                     >
-                    <button class="toggle-btn">+</button>
+                    <span id="plus" class="accordian-control">&#43;</span>
+                    <span id="minus" class="accordian-control">&#8722;</span>
                   </div>
+                  <hr />
                   <div class="accordion-content">
                     <div class="answer">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1192,13 +1279,67 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <div class="accordion-header d-flex justify-content-between">
-                    <span class="question"
-                      >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Soluta, nostrum!</span
+                  <div
+                    class="accordion-header d-flex justify-content-between position-relative"
+                  >
+                    <span class="question question_span"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      In, ipsam?</span
                     >
-                    <button class="toggle-btn">+</button>
+                    <span id="plus" class="accordian-control">&#43;</span>
+                    <span id="minus" class="accordian-control">&#8722;</span>
                   </div>
+                  <hr />
+                  <div class="accordion-content">
+                    <div class="answer">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Autem dolores recusandae ullam cumque ad repellat magnam
+                      optio blanditiis harum, quam minima velit at itaque
+                      reiciendis quibusdam culpa consectetur libero natus quo
+                      amet alias necessitatibus. Rem, excepturi voluptas,
+                      exercitationem quo beatae magnam necessitatibus
+                      consectetur architecto ipsa quasi ex laudantium iusto
+                      mollitia!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div
+                    class="accordion-header d-flex justify-content-between position-relative"
+                  >
+                    <span class="question question_span"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      In, ipsam?</span
+                    >
+                    <span id="plus" class="accordian-control">&#43;</span>
+                    <span id="minus" class="accordian-control">&#8722;</span>
+                  </div>
+                  <hr />
+                  <div class="accordion-content">
+                    <div class="answer">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Autem dolores recusandae ullam cumque ad repellat magnam
+                      optio blanditiis harum, quam minima velit at itaque
+                      reiciendis quibusdam culpa consectetur libero natus quo
+                      amet alias necessitatibus. Rem, excepturi voluptas,
+                      exercitationem quo beatae magnam necessitatibus
+                      consectetur architecto ipsa quasi ex laudantium iusto
+                      mollitia!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div
+                    class="accordion-header d-flex justify-content-between position-relative"
+                  >
+                    <span class="question question_span"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      In, ipsam?</span
+                    >
+                    <span id="plus" class="accordian-control">&#43;</span>
+                    <span id="minus" class="accordian-control">&#8722;</span>
+                  </div>
+                  <hr />
                   <div class="accordion-content">
                     <div class="answer">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -1219,127 +1360,305 @@
         <!-- accordian end -->
 
         <!-- blog scetion start -->
-        <section>
+        <section class="blog_sec">
           <div class="bg-white mt-120">
             <div class="container">
               <div
-                class="d-flex w-100 w-lg-75 text-justify flex-column gap-2 justify-content-center align-items-center mx-auto mb-4"
+                class="row align-items-center justify-content-center text-center"
               >
-                <h4 class="sub-heading">Blog</h4>
-                <h2 class="heading">
-                  ummy text of the printing and typesetting
-                </h2>
-                <p class="title">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an.
-                </p>
+                <div class="col-12 col-lg-9 mb-2 mb-lg-4">
+                  <h3 class="sub-heading">Blog</h3>
+                  <h2 class="heading">
+                    ummy text of the printing and typesetting
+                  </h2>
+                  <p class="title">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an.
+                  </p>
+                </div>
               </div>
-              <!-- <div class="row g-4 justify-content-center">
-                <div
-                  class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
-                >
-                  <div>
-                    <img src="./assets/images/blog/blog1.png" />
-                  </div>
-                  <div class="p-3">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <button>date</button>
-                        <button>user</button>
+              <div class="row justify-content-start g-3">
+                <div class="blog_box col-12 col-sm-6 col-lg-4">
+                  <div class="d-flex flex-column justify-content-center shadow">
+                    <div class="img_border w-100 h-100">
+                      <img class="w-100" src="./assets/images/blog/blog1.png" />
+                    </div>
+                    <div class="p-3">
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="d-flex gap-3 align-items-center justify-content-start mb-3"
+                        >
+                          <button
+                            class="background-secondary d-flex gap-1 py-2 justify-content-center align-items-center"
+                          >
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span class="">Jan 10, 2024</span>
+                          </button>
+                          <button
+                            class="d-flex gap-1 py-2 justify-content-center align-items-center"
+                          >
+                            <i class="fa-regular fa-user"></i>
+                            <span>exhobz</span>
+                          </button>
+                        </div>
+                        <div>
+                          <span id="current_date"></span>
+                        </div>
                       </div>
-                      <button>date</button>
-                    </div>
-                    <div>
-                      <h3>
+                      <h2 class="blog_heading">
                         Why new approaches are really important in positioning
-                      </h3>
-                    </div>
-                    <div>
-                      <p>
+                      </h2>
+                      <p class="blog_para">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
                         when an unknown.
                       </p>
+                      <a class="textcolor-secondary fs-6">READ MORE</a>
                     </div>
-                    <a>READ MORE</a>
                   </div>
                 </div>
-                <div
-                  class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
-                >
-                  <div class="order-2">
-                    <img src="./assets/images/blog/blog1.png" />
-                  </div>
-                  <div class="p-3 order-1">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <button>date</button>
-                        <button>user</button>
+                <div class="blog_box col-12 col-sm-6 col-lg-4">
+                  <div class="d-flex flex-column justify-content-center shadow">
+                    <div
+                      class="img_border_change w-100 h-100 order-1 order-sm-2"
+                    >
+                      <img class="w-100" src="./assets/images/blog/blog1.png" />
+                    </div>
+                    <div class="p-3 order-2 order-sm-1">
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="d-flex gap-3 align-items-center justify-content-start mb-3"
+                        >
+                          <button
+                            class="background-secondary d-flex gap-1 py-2 justify-content-center align-items-center"
+                          >
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span class="">Jan 10, 2024</span>
+                          </button>
+                          <button
+                            class="d-flex gap-1 py-2 justify-content-center align-items-center"
+                          >
+                            <i class="fa-regular fa-user"></i>
+                            <span>exhobz</span>
+                          </button>
+                        </div>
+                        <div>
+                          <span id="current_date1"></span>
+                        </div>
                       </div>
-                      <button>date</button>
-                    </div>
-                    <div>
-                      <h3>
+                      <h2 class="blog_heading">
                         Why new approaches are really important in positioning
-                      </h3>
-                    </div>
-                    <div>
-                      <p>
+                      </h2>
+                      <p class="blog_para">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
                         when an unknown.
                       </p>
+                      <a class="textcolor-secondary fs-6">READ MORE</a>
                     </div>
-                    <a>READ MORE</a>
                   </div>
                 </div>
-                <div
-                  class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
-                >
-                  <div>
-                    <img src="./assets/images/blog/blog1.png" />
-                  </div>
-                  <div class="p-3">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex gap-2">
-                        <button>date</button>
-                        <button>user</button>
+                <div class="blog_box col-12 col-sm-6 col-lg-4">
+                  <div class="d-flex flex-column justify-content-center shadow">
+                    <div class="img_border w-100 h-100">
+                      <img class="w-100" src="./assets/images/blog/blog1.png" />
+                    </div>
+                    <div class="p-3">
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="d-flex gap-3 align-items-center justify-content-start mb-3"
+                        >
+                          <button
+                            class="background-secondary d-flex gap-1 py-2 justify-content-center align-items-center"
+                          >
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span class="">Jan 10, 2024</span>
+                          </button>
+                          <button
+                            class="d-flex gap-1 py-2 justify-content-center align-items-center"
+                          >
+                            <i class="fa-regular fa-user"></i>
+                            <span>exhobz</span>
+                          </button>
+                        </div>
+                        <div>
+                          <span id="current_date2"></span>
+                        </div>
                       </div>
-                      <button>date</button>
-                    </div>
-                    <div>
-                      <h3>
+                      <h2 class="blog_heading">
                         Why new approaches are really important in positioning
-                      </h3>
-                    </div>
-                    <div>
-                      <p>
+                      </h2>
+                      <p class="blog_para">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s,
                         when an unknown.
                       </p>
+                      <a class="textcolor-secondary fs-6">READ MORE</a>
                     </div>
-                    <a>READ MORE</a>
                   </div>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </section>
         <!-- blog scetion end -->
+
+        <!-- footer section start -->
+        <footer class="footer background-pimary">
+          <div class="container">
+            <div class="w-100 position-relative text-white">
+              <div class="footer_absolute_div">
+                <div
+                  class="d-flex flex-column justify-content-center align-content-center gap-4"
+                >
+                  <h2 class="text-center footer_heading">
+                    Schedule Your Employee Engagement Activities with Us
+                  </h2>
+                  <button class="common-btn3 mx-auto">
+                    <span class="">Enquire Now</span>
+                    <i class="fa-solid fa-arrow-right-long ms-2"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="footer_main row">
+                <div>
+                  <ul
+                    class="d-flex flex-column flex-lg-row align-items-lg-between align-items-center justify-content-between"
+                  >
+                    <li class="w-25">
+                      <ul
+                        class="footer_logo_section d-flex h-100 flex-column justify-content-center align-items-between gap-4"
+                      >
+                        <a
+                          ><img
+                            class="footer_logo w-100"
+                            src="./assets/logos/logo.svg"
+                        /></a>
+                        <div class="d-flex justify-content-between fs-4">
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <i class="fa-brands fa-twitter"></i>
+                          <i class="fa-brands fa-instagram"></i>
+                        </div>
+                      </ul>
+                    </li>
+                    <li class="w-100 w-lg-75">
+                      <ul
+                        class="text-center d-flex flex-column flex-sm-row justify-content-between gap-4"
+                      >
+                        <li>
+                          <div>
+                            <a class="footer_menu_title" href="#">Services</a>
+                          </div>
+                          <ul>
+                            <li>
+                              <a class="footer_menu_option" href="#"
+                                >Lorem ipsum</a
+                              >
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#"
+                                >Lorem ipsum dolor</a
+                              >
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#">Lorem</a>
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#"
+                                >Lorem ipsum dolor</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <div>
+                            <a class="footer_menu_title" href="#">Services</a>
+                          </div>
+                          <ul>
+                            <li>
+                              <a class="footer_menu_option" href="#"
+                                >Lorem ipsum dolor</a
+                              >
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#">Lorem</a>
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#"
+                                >Lorem ipsum</a
+                              >
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#"
+                                >Lorem ipsum dolor</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <div>
+                            <a class="footer_menu_title" href="#">Services</a>
+                          </div>
+                          <ul>
+                            <li>
+                              <a class="footer_menu_option" href="#">Lorem</a>
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#"
+                                >Lorem ipsum</a
+                              >
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#"
+                                >Lorem ipsum dolor</a
+                              >
+                            </li>
+                            <li>
+                              <a class="footer_menu_option" href="#">Lorem</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <hr class="my-1" />
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between mt-5"
+                >
+                  <p class="text-center">
+                    Copyright © 2024 by
+                    <span class="textcolor-secondary">Meshh</span> . All Rights
+                    Reserved.
+                  </p>
+                  <div
+                    class="terms_condition d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3"
+                  >
+                    <span>
+                      <a>Terms & Conditions</a>
+                    </span>
+                    <span>
+                      <a>Privacy Policy</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer section end -->
       </main>
     </div>
 
     <script src="../app/src/js/header.js"></script>
     <script src="../app/src/js/carousel.js"></script>
     <script src="../app/src/js/hero.js"></script>
-
+    <script src="../app/src/js/currentDate.js"></script>
     <script src="../app/src/js/lineSlider.js"></script>
-
     <script src="../app/src/js/accordian.js"></script>
   </body>
 </html>
