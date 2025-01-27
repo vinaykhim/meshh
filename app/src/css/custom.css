@@ -70,6 +70,19 @@
   color: var(--primary-color);
 }
 
+.portfolio-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 32.5px;
+  font-family: var(--primary-archivo);
+}
+.portfolio-paragraph {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: var(--secodary-relaway);
+}
+
 .box_heading {
   font-size: 30px;
   line-height: 39px;
@@ -96,6 +109,14 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  font-family: var(--secodary-relaway);
+}
+
+.services_para {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: var(--secodary-relaway);
 }
 
 .question {
@@ -255,6 +276,7 @@
   font-family: var(--secodary-relaway);
 }
 
+/* ===============  services page =============== */
 .gradient_box .box_two_heading {
   font-size: 25px;
   line-height: 32px;
@@ -270,6 +292,30 @@
   font-family: var(--secodary-relaway);
   color: var(--primary-color);
   text-align: center;
+}
+.top_feature_box .box_two_heading {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: var(--primary-archivo);
+  color: var(--primary-color);
+  text-align: start;
+}
+.top_feature_box .box_two_title {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: var(--third-arizonia);
+  color: var(--secondary-color);
+  text-align: start;
+}
+.top_feature_box .box_two_para {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: var(--secodary-relaway);
+  color: var(--primary-color);
+  text-align: justify;
 }
 /* butttons end */
 
@@ -356,7 +402,7 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   row-gap: 0;
 }

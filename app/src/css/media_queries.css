@@ -48,6 +48,7 @@
     right: 29px;
     padding: 5px auto;
   }
+  /*  welcome section end */
 
   /* ========= what we do section start ========*/
   .what-card-title {
@@ -55,8 +56,6 @@
     font-size: 22px;
   }
   /* what we do section end */
-
-  /*  welcome section end */
 
   /* ========== blog section start ========= */
   .blog_sec {
@@ -75,18 +74,18 @@
   .footer_absolute_div > div {
     margin: 50px auto !important;
   }
-  /* footer start */
+  /* footer end */
 
   /*   ========================== Home page end ========================= */
 
   /*   ========================== About page start ====================== */
-  /* about welcome to meshh */
+  /* ========== about welcome to meshh start ==========*/
   .happy_customer_fix_box {
     right: 0;
   }
+  /* about welcome to meshh end */
 
-  /* boxes start */
-
+  /* ============== boxes start =============*/
   .gradient_box p {
     font-size: 18px;
     line-height: 40px;
@@ -106,12 +105,6 @@
   .mb-120 {
     margin-bottom: 100px;
   }
-
-  /*   ========================== Home page start ========================= */
-  /*   ========================== Home page end ========================= */
-
-  /*   ========================== About page start ====================== */
-  /*   ========================== About page end ====================== */
 }
 
 @media (min-width: 992px) and (max-width: 1320px) {
@@ -126,13 +119,11 @@
   }
 
   /*   ========================== Home page end ========================= */
-
-  /*   ========================== About page start ====================== */
-  /*   ========================== About page end ====================== */
 }
 
 @media (max-width: 992px) {
   /*   ========================== Home page start ========================= */
+  /* ============== hero section start ============== */
   .hero-one {
     padding: 50px 0;
   }
@@ -140,8 +131,9 @@
   .hero-one p {
     text-align: justify;
   }
+  /* hero section end */
 
-  /*  welcome section start */
+  /* ================  welcome section start =========== */
   .welcome-to {
     width: 90%;
     height: 500px;
@@ -162,6 +154,7 @@
     bottom: 4px;
     right: 4px;
   }
+  /* welcome section end */
 
   /*======== marquee start ======= */
   .marquee-item span {
@@ -172,7 +165,7 @@
   .marquee-item img {
     width: 35px;
   }
-  /* marquee start */
+  /* marquee end */
 
   /* ========= what we do section start ========*/
   .what-card-title {
@@ -180,8 +173,7 @@
   }
   /* what we do section end */
 
-  /* port folio start */
-
+  /* ============== port folio start ============= */
   .overlay1 span {
     width: 60px;
     height: 60px;
@@ -189,7 +181,11 @@
   }
   /* port folio end */
 
-  /* inasta section start */
+  /* ============ inasta section start ============= */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
+  }
   .insta-visit {
     font-size: 35px;
     font-weight: 300;
@@ -261,7 +257,7 @@
   /*   ========================== Home page end ========================= */
 
   /*   ========================== About page start ====================== */
-  /* about hero start */
+  /* =============== about hero start ============== */
   .about_headding,
   .about_headding span {
     font-size: 50px !important;
@@ -274,7 +270,7 @@
   }
   /* about hero end */
 
-  /* boxes start */
+  /* =============== boxes start ================ */
   .gradient_box h2 {
     font-size: 60px;
     line-height: 55px;
@@ -285,7 +281,7 @@
   }
   /* boxes end */
 
-  /* visio and mission start */
+  /* ============== vision and mission start ============ */
   .vision_mission_img > div > div {
     width: 100%;
   }
@@ -293,7 +289,7 @@
     height: 550px;
   }
 
-  /* visio and mission end */
+  /* vision and mission end */
 
   /*   ========================== About page end ====================== */
 }
@@ -352,15 +348,21 @@
   }
   /*  what to do end  */
 
-  /*  portfolio staend */
-
+  /* ============ port folio start =========  */
   .overlay1:hover {
     opacity: 0;
   }
+  .portfolio-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .portfolio-paragraph {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  /* port folio end */
 
-  /* portfolio end */
-
-  /* insta section start */
+  /* ============== insta section start ============= */
   .insta-visit {
     font-size: 30px;
     font-weight: 300;
@@ -396,7 +398,7 @@
   /*   ========================== Home page end ========================= */
 
   /*   ========================== About page start ====================== */
-  /* about hero start */
+  /* ================ about hero start ============= */
   .about_headding,
   .about_headding span {
     font-size: 45px !important;
@@ -412,6 +414,21 @@
   }
   /* about hero end */
   /*   ========================== About page end ====================== */
+
+  /* ======================= Service Page Start ======================== */
+  /* ========== Video Section start =========== */
+  .service_video .play_button {
+    width: 80px;
+    height: 80px;
+  }
+  .play_button_div1,
+  .play_button_div2,
+  .play_button_div3 {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
+  /* Video Section start  */
+  /* ======================= Service Page End ======================== */
 }
 
 @media (max-width: 667px) {
@@ -480,7 +497,6 @@
   /* footer end */
 
   /*   ========================== About page start ====================== */
-  /*   ========================== About page end ====================== */
 }
 
 @media (max-width: 575px) {
@@ -531,7 +547,7 @@
 
   /*   ========================== About page start ====================== */
 
-  /* about hero start */
+  /* ========== about hero start =============== */
   .about_headding,
   .about_headding span {
     font-size: 35px !important;
@@ -585,7 +601,7 @@
     padding: 7px 16px;
   }
 
-  /* header start */
+  /* =============== header start ============ */
   .site-logo {
     width: 75px;
     height: 75px;
@@ -593,7 +609,7 @@
   }
   /* header end */
 
-  /*  welcome section start */
+  /* ================  welcome section start ================= */
   .welcome-to {
     width: 100%;
     height: 400px;
@@ -639,6 +655,7 @@
   .gallery {
     grid-template-columns: repeat(1, 1fr);
   }
+
   /* gallery end */
 
   /* ========= testamonial start ======= */
@@ -646,6 +663,17 @@
     border-right: none !important;
   }
   /* testamonial end */
+
+  /* ============ port folio start =========  */
+  .portfolio-title {
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+  .portfolio-paragraph {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  /* port folio end */
 
   /* ============ Accordian start ================ */
   .question {
@@ -661,10 +689,6 @@
   /* Accordian end  */
 
   /* ========== blog section start ========= */
-  /* .blog_sec {
-    margin-bottom: 7rem !important;
-  } */
-  /* blog section end */
 
   /* ============  footer start ==============*/
   .footer_main {
@@ -684,7 +708,7 @@
 /*   ========================== Home page end ========================= */
 
 /*   ========================== About page start ====================== */
-/* about hero section start */
+/* =============== about hero section start ============= */
 .about_headding,
 .about_headding span {
   font-size: 30px;
@@ -692,7 +716,7 @@
 }
 /* about hero section end */
 
-/* abrout welcome to meshh start */
+/* ============== abrout welcome to meshh start ============== */
 
 .happy_customer_fix_box {
   width: 170px;
@@ -709,98 +733,3 @@
 /* abrout welcome to meshh end */
 
 /*   ========================== About page end ====================== */
-
-@media screen and (min-width: 667px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .gallery {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .image-container {
-    margin-bottom: 20px;
-  }
-}
-
-/* ======================== min media query start ======================= */
-
-@media screen and (min-width: 414px) {
-  /*  welcome section start */
-  /* .welcome-to {
-    width: 100%;
-    height: 450px;
-  }
-  .welcome-to-top {
-    width: 58%;
-    height: 75%;
-  }
-  .welcome-to-bottom {
-    width: 60%;
-    height: 60%;
-  }
-  .welcome-to-message {
-    bottom: 4px;
-    right: 4px;
-    padding: 5px auto;
-  } */
-
-  /*  welcome section end */
-}
-@media screen and (min-width: 576px) {
-  /* our portfolio start */
-  .portfolio-title {
-    font-size: 18px;
-  }
-  .portfolio-peragraph {
-    font-size: 16px;
-  }
-  /* our portfolio end */
-}
-@media screen and (min-width: 667px) {
-  /* welcome section start */
-  /* .welcome-to {
-    width: 90%;
-    height: 500px;
-    margin: 0 auto;
-  }
-  .welcome-to-top {
-    width: 60%;
-    height: 80%;
-    right: 0;
-  }
-  .welcome-to-bottom {
-    width: 60%;
-    height: 80%;
-    left: 0;
-  }
-  .welcome-to-message {
-    width: 40%;
-    bottom: 4px;
-    right: 4px;
-  } */
-}
-@media screen and (min-width: 1024px) {
-  /* our portfolio start */
-  .portfolio-title {
-    font-size: 25px;
-    line-height: 32.5px;
-  }
-  .portfolio-paragraph {
-    font-size: 16px;
-    line-height: 30px;
-  }
-  /* our portfolio end */
-}
-@media screen and (min-width: 1320px) {
-}
-@media screen and (min-width: 1540px) {
-  .card {
-    height: 900px;
-  }
-}
-
-/* ======================== min media query start ======================= */

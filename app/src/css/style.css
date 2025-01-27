@@ -13,6 +13,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("../../../public/assets/fonts/Poppins-Regular.ttf")
@@ -22,10 +23,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Arizonia";
+  src: url("../../../public/assets/fonts/Arizonia-Regular.ttf")
+      format("truetype"),
+    url("../../../public/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   /*Fonts*/
   --primary-archivo: "Poppins", sans-serif;
   --secodary-relaway: "Relaway", sans-serif;
+  --third-arizonia: "Arizonia", "sans-serif";
   /*color*/
   --sub-headding: #0087ff;
   --headiing: #333333;
@@ -497,3 +507,118 @@ img {
 /*marquee*/
 
 /*------------------End About Page CSS------------------------*/
+
+/*-------------------- Start Services Page CSS ---------------*/
+
+.service_hero img {
+  width: 100%;
+  height: 100vh;
+}
+.service_hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.service_hero_content {
+  z-index: 2;
+}
+
+/* ==============  video start ============ */
+/* ==============  video start ============ */
+
+.service_video .play_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.play_button_div1,
+.play_button_div2,
+.play_button_div3 {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.play_button_div1 {
+  background-color: var(--secondary-color);
+}
+.play_button_div2 {
+  background-color: orange;
+}
+.play_button_div3 {
+  background-color: white;
+  cursor: pointer;
+}
+.play_button_div3:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+/* ==============  video end ============ */
+
+/* Fullscreen Video */
+.fullscreen-video {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.video-overlay {
+  width: 80%;
+  max-width: 1200px;
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+}
+
+/*-------------------- End Services Page CSS ---------------*/
