@@ -117,7 +117,7 @@ img {
 .line::before {
   content: "";
   position: absolute;
-  top: var(--random-top, 10%);
+  top: -10%;
   width: inherit;
   height: 8%;
   background: linear-gradient(
