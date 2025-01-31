@@ -101,7 +101,7 @@
                 >
                   <img
                     class="position-absolute top-50 ms-4 w-50 h-auto"
-                    src="./assets/images/hero/human4.png"
+                    src="./assets/images/hero/img4.png"
                   />
                 </div>
                 <!-- main content start -->
@@ -440,12 +440,13 @@
                 class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
               >
                 <div class="what-card">
-                  <div class="position-relative">
+                  <div class="position-relative overflow-hidden">
                     <img
                       src="assets/images/what we do/img1.jpeg"
                       alt="Marriage Event"
                       class="card-img-top w-100 h-100"
                     />
+
                     <h5 class="what-card-title">Marriage Event</h5>
                   </div>
                   <div class="container-fluid">
@@ -464,7 +465,7 @@
                 class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
               >
                 <div class="what-card rounded-0">
-                  <div class="position-relative">
+                  <div class="position-relative overflow-hidden">
                     <img
                       src="assets/images/what we do/img1.jpeg"
                       alt="Marriage Event"
@@ -488,7 +489,7 @@
                 class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
               >
                 <div class="what-card rounded-0">
-                  <div class="position-relative">
+                  <div class="position-relative overflow-hidden">
                     <img
                       src="assets/images/what we do/img1.jpeg"
                       alt="Marriage Event"
@@ -512,7 +513,7 @@
                 class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
               >
                 <div class="what-card">
-                  <div class="position-relative">
+                  <div class="position-relative overflow-hidden">
                     <img
                       src="assets/images/what we do/img1.jpeg"
                       alt="Marriage Event"
@@ -536,7 +537,7 @@
                 class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
               >
                 <div class="what-card rounded-0">
-                  <div class="position-relative">
+                  <div class="position-relative overflow-hidden">
                     <img
                       src="assets/images/what we do/img1.jpeg"
                       alt="Marriage Event"
@@ -560,7 +561,7 @@
                 class="col-12 col-sm-6 col-lg-4 d-flex flex-column justify-content-center"
               >
                 <div class="what-card rounded-0">
-                  <div class="position-relative">
+                  <div class="position-relative overflow-hidden">
                     <img
                       src="assets/images/what we do/img1.jpeg"
                       alt="Marriage Event"
@@ -1112,26 +1113,31 @@
                   industry Loreaim Ipsum has been
                 </p>
               </div>
+
               <div
-                class="px-5 col-12 col-lg-7 d-flex flex-column justify-content-center align-content-center border rounded-1 position-relative"
+                class="testimonial-carousel px-5 col-12 col-lg-7 d-flex flex-column justify-content-center align-content-center border rounded-1 position-relative"
               >
                 <div
                   class="testamonial_sec2 d-flex align-items-center justify-content-center gap-2"
                 >
-                  <span class="bg-white border">&lt;</span>
-                  <img src="./assets/images/testamonial/user.jpeg" />
-                  <span class="bg-white border">&gt;</span>
+                  <span class="bg-white border carousel-btn prev-btn"
+                    >&lt;</span
+                  >
+                  <img
+                    id="testimonialImage"
+                    src="./assets/images/hero/human1.png"
+                  />
+                  <span class="bg-white border carousel-btn next-btn"
+                    >&gt;</span
+                  >
                 </div>
                 <div class="my-5 position-relative">
                   <hr />
                   <i class="testamonial_sec2_line fa-solid fa-quote-right"></i>
-                  <!-- <span class="testamonial_sec2_line">&rdquo;</span> -->
                 </div>
-                <p class="testamonial_para mt-2 mb-5 pb-5">
+                <p id="testimonialText" class="testamonial_para mt-2 mb-5 pb-5">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been Lorem Ipsum is
-                  simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been.
+                  typesetting industry.
                 </p>
               </div>
             </div>
@@ -1649,6 +1655,7 @@
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/hero.js"></script>
+    <script src="./assets/js/Testomonial.js"></script>
     <script src="./assets/js/currentDate.js"></script>
     <script src="./assets/js/lineSlider.js"></script>
     <script src="./assets/js/accordian.js"></script>

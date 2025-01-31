@@ -341,6 +341,13 @@
   right: 0;
 }
 
+.card-img-top {
+  transition: all 0.6s ease-in-out;
+}
+.what-card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
 /* what we do section card end */
 
 /*portfolio section start  */
@@ -375,6 +382,7 @@
   background-color: var(--secondary-color);
   color: var(--primary-color);
   transform: rotate(45deg);
+  cursor: pointer;
 }
 /*portfolio section start  */
 
@@ -470,9 +478,11 @@
   height: 40px;
   font-size: 25px;
 }
+.testamonial_sec2 span:hover {
+  cursor: pointer;
+}
 .testamonial hr {
   color: #c5c4c4;
-  /* margin-bottom: 25px; */
 }
 .testamonial_sec2_line {
   display: flex;

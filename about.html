@@ -334,7 +334,7 @@
                   <!-- <div class="w-100 rounded-20">
                     <img
                       class="w-100 h-auto rounded-20"
-                      src="../../../public/assets/images/About/office.png"
+                      src="/assets/images/About/office.png"
                     />
                   </div> -->
                   <div class="about_user_sec_background_img"></div>
@@ -518,25 +518,29 @@
                 </p>
               </div>
               <div
-                class="px-5 col-12 col-lg-7 d-flex flex-column justify-content-center align-content-center border rounded-1 position-relative"
+                class="testimonial-carousel px-5 col-12 col-lg-7 d-flex flex-column justify-content-center align-content-center border rounded-1 position-relative"
               >
                 <div
                   class="testamonial_sec2 d-flex align-items-center justify-content-center gap-2"
                 >
-                  <span class="bg-white border">&lt;</span>
-                  <img src="./assets/images/testamonial/user.jpeg" />
-                  <span class="bg-white border">&gt;</span>
+                  <span class="bg-white border carousel-btn prev-btn"
+                    >&lt;</span
+                  >
+                  <img
+                    id="testimonialImage"
+                    src="./assets/images/hero/human1.png"
+                  />
+                  <span class="bg-white border carousel-btn next-btn"
+                    >&gt;</span
+                  >
                 </div>
                 <div class="my-5 position-relative">
                   <hr />
                   <i class="testamonial_sec2_line fa-solid fa-quote-right"></i>
-                  <!-- <span class="testamonial_sec2_line">&rdquo;</span> -->
                 </div>
-                <p class="testamonial_para mt-2 mb-5 pb-5">
+                <p id="testimonialText" class="testamonial_para mt-2 mb-5 pb-5">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been Lorem Ipsum is
-                  simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been.
+                  typesetting industry.
                 </p>
               </div>
             </div>
@@ -1051,9 +1055,10 @@
       </main>
     </div>
 
-    <script src="./assets/js/currentDate.js"></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/hero.js"></script>
+    <script src="./assets/js/Testomonial.js"></script>
+    <script src="./assets/js/currentDate.js"></script>
     <script src="./assets/js/accordian.js"></script>
   </body>
 </html>
