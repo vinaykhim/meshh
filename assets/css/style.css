@@ -404,7 +404,12 @@ img {
 .box_client_img img {
   width: 100%;
   max-width: 100%;
+  filter: grayscale(0%);
 }
+.box_client_img:hover img {
+  filter: grayscale(100%);
+}
+
 /* Our client end */
 
 /* insta story start */
@@ -498,7 +503,7 @@ img {
   width: 100%;
   height: 625px;
   border-radius: 20px;
-  background-image: url("../../../public/assets/images/About/office.png");
+  background-image: url("/assets/images/About/office.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
