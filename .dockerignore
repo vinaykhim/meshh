@@ -1,0 +1,6 @@
+.git
+Dockerfile
+.dockerignore
+rebuild-listener.js
+node_modules
+*.log

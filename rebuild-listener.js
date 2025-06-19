@@ -14,7 +14,7 @@ app.post("/rebuild", (req, res) => {
     docker build --no-cache -t meshh-image . &&
     docker stop meshh || true &&
     docker rm meshh || true &&
-    docker run -d -p 8080:80 --name meshh meshh-image
+    docker run -d -p 20089:80 --name meshh meshh-image
     `,
     (err, stdout, stderr) => {
       if (err) {
