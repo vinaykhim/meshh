@@ -9,18 +9,19 @@ app.post("/rebuild", (req, res) => {
 
   exec(
     `
+    cd /home/vinay/Desktop/Meshh &&
     git pull origin main &&
-    docker build -t my-static-site . &&
-    docker stop static-web || true &&
-    docker rm static-web || true &&
-    docker run -d -p 8080:80 --name static-web my-static-site
-  `,
+    docker build --no-cache -t meshh-image . &&
+    docker stop meshh || true &&
+    docker rm meshh || true &&
+    docker run -d -p 8080:80 --name meshh meshh-image
+    `,
     (err, stdout, stderr) => {
       if (err) {
-        console.error(stderr);
+        console.error("🚫 Build Error:", stderr);
         res.status(500).send("Error rebuilding Docker");
       } else {
-        console.log(stdout);
+        console.log("✅ Build Output:", stdout);
         res.send("Docker rebuild complete!");
       }
     }
