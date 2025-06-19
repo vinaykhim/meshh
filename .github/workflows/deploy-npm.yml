@@ -1,0 +1,12 @@
+name: Notify Local Docker
+
+on:
+  workflow_dispatch: # 👈 enables manual trigger from GitHub Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger rebuild on local machine
+        run: |
+          curl -X POST http://YOUR_LOCAL_PUBLIC_URL/rebuild
