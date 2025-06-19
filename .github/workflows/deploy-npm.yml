@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Trigger rebuild on local machine
         run: |
-          curl -X POST http://YOUR_LOCAL_PUBLIC_URL/rebuild
+          curl -X POST https://fc85-202-131-119-126.ngrok-free.app/rebuild

@@ -1,0 +1,24 @@
+{
+  "name": "meshh",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # domura ======= # meshh my project >>>>>>> aa95e3a45af3fe3c461f8aad0a4698d7a276a203",
+  "main": "rebuild-listener.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinaykhim/meshh.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinaykhim/meshh/issues"
+  },
+  "homepage": "https://github.com/vinaykhim/meshh#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "ngrok": "^5.0.0-beta.2"
+  }
+}
