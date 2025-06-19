@@ -1,0 +1,735 @@
+@media (max-width: 1550px) {
+  /*   ========================== Home page start ========================= */
+  /*   ========================== Home page end ========================= */
+
+  /*   ========================== About page start ====================== */
+  /* about hero start */
+  .about_hero {
+    height: auto;
+  }
+  /* about hero end */
+  /*   ========================== About page end ====================== */
+}
+
+@media (max-width: 1440px) {
+  /*   ========================== Home page start ========================= */
+  /*   ========================== Home page end ========================= */
+
+  /*   ========================== About page start ====================== */
+  /* about hero start */
+
+  /* about hero end */
+  /*   ========================== About page end ====================== */
+}
+@media (max-width: 1320px) {
+  /*   ========================== Home page start ========================= */
+  /*   ========================== Home page end ========================= */
+
+  /*   ========================== About page start ====================== */
+  /*   ========================== About page end ====================== */
+}
+
+@media (max-width: 1200px) {
+  /*   ========================== Home page start ========================= */
+
+  /*  welcome section start */
+  .welcome-to-top {
+    width: 100%;
+    height: 100%;
+    right: 25;
+  }
+  .welcome-to-bottom {
+    width: 0;
+    height: 0;
+  }
+  .welcome-to-message {
+    width: 50%;
+    bottom: 4px;
+    right: 29px;
+    padding: 5px auto;
+  }
+  /*  welcome section end */
+
+  /* ========= what we do section start ========*/
+  .what-card-title {
+    width: 80%;
+    font-size: 22px;
+  }
+  /* what we do section end */
+
+  /* ========== blog section start ========= */
+  .blog_sec {
+    margin-bottom: 11rem !important;
+  }
+  /* blog section end */
+
+  /* ============ footer start =========== */
+  .footer_main {
+    padding-top: 13rem !important;
+  }
+  .footer_absolute_div {
+    height: 300px;
+    top: -9rem;
+  }
+  .footer_absolute_div > div {
+    margin: 50px auto !important;
+  }
+  /* footer end */
+
+  /*   ========================== Home page end ========================= */
+
+  /*   ========================== About page start ====================== */
+  /* ========== about welcome to meshh start ==========*/
+  .happy_customer_fix_box {
+    right: 0;
+  }
+  /* about welcome to meshh end */
+
+  /* ============== boxes start =============*/
+  .gradient_box p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  /* boxes end */
+
+  .about_user_sec_background_img {
+    height: 750px;
+  }
+  /*   ========================== About page end ====================== */
+}
+
+@media (max-width: 1024px) {
+  .mt-120 {
+    margin-top: 100px;
+  }
+  .mb-120 {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1320px) {
+  /*   ========================== Home page start ========================= */
+  .hiro-heading {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .hiro-heading span {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  /*   ========================== Home page end ========================= */
+}
+
+@media (max-width: 992px) {
+  /*   ========================== Home page start ========================= */
+  /* ============== hero section start ============== */
+  .hero-one {
+    padding: 50px 0;
+  }
+
+  .hero-one p {
+    text-align: justify;
+  }
+  /* hero section end */
+
+  /* ================  welcome section start =========== */
+  .welcome-to {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+  }
+  .welcome-to-top {
+    width: 60%;
+    height: 80%;
+    right: 0;
+  }
+  .welcome-to-bottom {
+    width: 60%;
+    height: 80%;
+    left: 0;
+  }
+  .welcome-to-message {
+    width: 40%;
+    bottom: 4px;
+    right: 4px;
+  }
+  /* welcome section end */
+
+  /*======== marquee start ======= */
+  .marquee-item span {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 15px;
+  }
+  .marquee-item img {
+    width: 35px;
+  }
+  /* marquee end */
+
+  /* ========= what we do section start ========*/
+  .what-card-title {
+    font-size: 22px;
+  }
+  /* what we do section end */
+
+  /* ============== port folio start ============= */
+  .overlay1 span {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  /* port folio end */
+
+  /* ============ inasta section start ============= */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
+  }
+  .insta-visit {
+    font-size: 35px;
+    font-weight: 300;
+  }
+
+  .insta-link {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  /* inasta section end */
+
+  /* ========= testamonial start ======= */
+  .testimonial_box > div:nth-child(1) {
+    border-right: 1px solid rgba(128, 128, 128, 0.2);
+  }
+  .testimonial_box > div:nth-child(2) {
+    border-right: none !important;
+  }
+  .testimonial_box > div:nth-child(3) {
+    border-right: 1px solid rgba(128, 128, 128, 0.2);
+  }
+
+  .testamonial_para {
+    text-align: justify;
+  }
+  /* testamonial end */
+
+  /* ========== blog section start ========= */
+  .blog_sec {
+    margin-bottom: 7.5rem !important;
+  }
+  /* blog section end */
+
+  /* ========= footer start ========= */
+
+  .footer_heading {
+    font-size: 25px !important;
+    line-height: 40px;
+  }
+  .footer_main {
+    padding-top: 9rem !important;
+  }
+  .footer_absolute_div {
+    height: 200px;
+    top: -6rem;
+  }
+  .footer_absolute_div > div {
+    margin: 45px auto !important;
+  }
+  .footer_menu_title {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  .footer_menu_option {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 18px;
+  }
+
+  .footer_logo_section {
+    max-width: 100%;
+  }
+
+  /* footer end */
+
+  /*   ========================== Home page end ========================= */
+
+  /*   ========================== About page start ====================== */
+  /* =============== about hero start ============== */
+  .about_headding,
+  .about_headding span {
+    font-size: 50px !important;
+    line-height: 62px !important;
+  }
+
+  .about_welcome_img {
+    width: 100%;
+    height: auto;
+  }
+  /* about hero end */
+
+  /* =============== boxes start ================ */
+  .gradient_box h2 {
+    font-size: 60px;
+    line-height: 55px;
+  }
+  .gradient_box p {
+    font-size: 22px;
+    line-height: 45px;
+  }
+  /* boxes end */
+
+  /* ============== vision and mission start ============ */
+  .vision_mission_img > div > div {
+    width: 100%;
+  }
+  .vision_mission_img {
+    height: 550px;
+  }
+
+  /* vision and mission end */
+
+  /*   ========================== About page end ====================== */
+}
+
+@media (max-width: 768px) {
+  .mt-120 {
+    margin-top: 80px;
+  }
+  .mb-120 {
+    margin-bottom: 80px;
+  }
+  .sub-heading {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+  .title {
+    text-align: justify;
+  }
+
+  .common-btn,
+  .common-btn2,
+  .comman-btn3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 9px 18px;
+  }
+
+  /*   ========================== Home page start ========================= */
+
+  /*======== welcome section start ========*/
+  .welcome-to-top {
+    width: 58%;
+    height: 75%;
+  }
+  .welcome-to-bottom {
+    width: 60%;
+    height: 58%;
+  }
+  .welcome-to-message {
+    bottom: 4px;
+    right: 4px;
+    padding: 5px auto;
+  }
+  /*  welcome section end */
+
+  /* ======== what to do start ========= */
+  .what-card-title {
+    width: 85%;
+    padding: 1rem 1.2rem;
+    font-size: 22px;
+  }
+  /*  what to do end  */
+
+  /* ============ port folio start =========  */
+  .overlay1:hover {
+    opacity: 0;
+  }
+  .portfolio-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .portfolio-paragraph {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  /* port folio end */
+
+  /* ============== insta section start ============= */
+  .insta-visit {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .insta-link {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  /* insta section end */
+
+  /* =============== footer start  ==================== */
+  .footer_heading {
+    font-size: 23px !important;
+    line-height: 40px;
+  }
+  .footer_main {
+    padding-top: 9rem !important;
+  }
+  .footer_absolute_div {
+    height: 200px;
+    top: -6rem;
+  }
+  .footer_absolute_div > div {
+    margin: 30px auto !important;
+  }
+  .footer_absolute_div > div > h2 {
+    padding: 0 10px;
+  }
+
+  /* footer end */
+
+  /*   ========================== Home page end ========================= */
+
+  /*   ========================== About page start ====================== */
+  /* ================ about hero start ============= */
+  .about_headding,
+  .about_headding span {
+    font-size: 45px !important;
+    line-height: 55px !important;
+  }
+  .about_hero {
+    height: 100vh;
+  }
+  .about_hero_content {
+    text-align: center;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  /* about hero end */
+  /*   ========================== About page end ====================== */
+
+  /* ======================= Service Page Start ======================== */
+  /* ========== Video Section start =========== */
+  .service_video .play_button {
+    width: 80px;
+    height: 80px;
+  }
+  .play_button_div1,
+  .play_button_div2,
+  .play_button_div3 {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+  }
+  /* Video Section start  */
+  /* ======================= Service Page End ======================== */
+}
+
+@media (max-width: 667px) {
+  /*   ========================== Home page start ========================= */
+  .hiro-heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hiro-heading span {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  /*========= welcome section start ========*/
+  .welcome-to {
+    width: 100%;
+    height: 450px;
+  }
+  .welcome-to-top {
+    width: 58%;
+    height: 75%;
+  }
+  .welcome-to-bottom {
+    width: 60%;
+    height: 60%;
+  }
+  .welcome-to-message {
+    bottom: 4px;
+    right: 4px;
+    padding: 5px auto;
+  }
+
+  /*  welcome section end
+
+  /*======== marquee start ======= */
+  .marquee-item span {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0 10px;
+  }
+  .marquee-item img {
+    width: 30px;
+  }
+
+  /* marquee start */
+
+  /* what we do section start */
+  .what-card-title {
+    font-size: 18px;
+  }
+  /* what we do section end */
+
+  /* ========= footer start ========= */
+
+  .footer_menu_title {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .footer_menu_option {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 18px;
+  }
+
+  /* footer end */
+
+  /*   ========================== About page start ====================== */
+}
+
+@media (max-width: 575px) {
+  /*   ========================== Home page start ========================= */
+  /* ======== what to do start ========= */
+  .what-card-title {
+    width: 80%;
+  }
+  /* what to do end */
+
+  /* ========  blog start  ========== */
+  .img_border_change img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .blog_sec {
+    margin-bottom: 7rem !important;
+  }
+  /* blog end */
+
+  /* ============  footer start  ============ */
+
+  .footer_heading {
+    font-size: 18px !important;
+    line-height: 25px;
+  }
+
+  .footer_menu_title {
+    margin-bottom: 20px;
+  }
+  .footer_menu_option {
+    margin-bottom: 16px !important;
+  }
+  .footer_main {
+    padding-top: 8rem !important;
+  }
+  .footer_absolute_div {
+    height: 178px;
+    top: -5.5rem;
+  }
+  .footer_absolute_div > div {
+    margin: 25px auto !important;
+  }
+
+  /* footer end */
+
+  /*   ========================== Home page end ========================= */
+
+  /*   ========================== About page start ====================== */
+
+  /* ========== about hero start =============== */
+  .about_headding,
+  .about_headding span {
+    font-size: 35px !important;
+    line-height: 42px !important;
+  }
+  .about_hero_content p {
+    text-align: justify;
+  }
+  .about_hero_content h1 {
+    padding-bottom: 35px;
+  }
+  /* about hero end */
+
+  /*   ========================== About page end ====================== */
+}
+
+@media (max-width: 480px) {
+  .mt-120 {
+    margin-top: 60px;
+  }
+  .mb-120 {
+    margin-bottom: 60px;
+  }
+
+  .sub-heading {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  /* ===============================   Home page start   ====================== */
+
+  .hiro-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hiro-heading span {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .common-btn,
+  .common-btn2,
+  .common-btn3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 7px 16px;
+  }
+
+  /* =============== header start ============ */
+  .site-logo {
+    width: 75px;
+    height: 75px;
+    margin: 5px 0;
+  }
+  /* header end */
+
+  /* ================  welcome section start ================= */
+  .welcome-to {
+    width: 100%;
+    height: 400px;
+  }
+  .welcome-to-top {
+    width: 100%;
+    height: 100%;
+    right: 0;
+  }
+  .welcome-to-bottom {
+    width: 0;
+    height: 0;
+  }
+  .welcome-to-message {
+    width: 50%;
+    bottom: 4px;
+    right: 4px;
+    padding: 5px auto;
+  }
+
+  /*  welcome section end */
+
+  /*======== marquee start ======= */
+  .marquee-item span {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  .marquee-item img {
+    width: 25px;
+  }
+
+  /* marquee end */
+
+  /* ======== what to do start ========= */
+  .what-card-title {
+    width: 70%;
+    font-size: 22px;
+  }
+  /* what to do end */
+
+  /*======== gallery start ======== */
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* gallery end */
+
+  /* ========= testamonial start ======= */
+  .testimonial_box > div {
+    border-right: none !important;
+  }
+  /* testamonial end */
+
+  /* ============ port folio start =========  */
+  .portfolio-title {
+    font-size: 25px;
+    line-height: 32.5px;
+  }
+  .portfolio-paragraph {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  /* port folio end */
+
+  /* ============ Accordian start ================ */
+  .question {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+  .answer {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  /* Accordian end  */
+
+  /* ========== blog section start ========= */
+
+  /* ============  footer start ==============*/
+  .footer_main {
+    padding-top: 7rem !important;
+  }
+  .footer_absolute_div {
+    height: 165px;
+    top: -5rem;
+  }
+  .footer_absolute_div > div {
+    margin: 22px auto !important;
+  }
+
+  /*  footer end */
+}
+
+/*   ========================== Home page end ========================= */
+
+/*   ========================== About page start ====================== */
+/* =============== about hero section start ============= */
+.about_headding,
+.about_headding span {
+  font-size: 30px;
+  line-height: 37px;
+}
+/* about hero section end */
+
+/* ============== abrout welcome to meshh start ============== */
+
+.happy_customer_fix_box {
+  width: 170px;
+  height: 140px;
+}
+.happy_customer {
+  font-size: 45px;
+  line-height: 50px;
+}
+.happy_customer_para {
+  font-size: 0px !important;
+  line-height: 25px;
+}
+/* abrout welcome to meshh end */
+
+/*   ========================== About page end ====================== */
